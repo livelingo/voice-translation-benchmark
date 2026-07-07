@@ -2,11 +2,11 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21250032.svg)](https://doi.org/10.5281/zenodo.21250032)
 
-Open benchmark data for **real-time voice translation quality**: speech in, translation out, scored for comprehension fidelity by three independent LLM judges (GPT-4o, Gemini 2.5 Flash, Claude). Published by [LiveLingo Research](https://www.livelingo.io/research). All data is **CC-BY 4.0** — reuse it freely with attribution.
+Open benchmark data for **real-time voice translation quality**: speech in, translation out, scored for comprehension fidelity by three independent LLM judges (GPT-4o, Gemini 2.5 Flash, Claude). Headline results: comprehension **4.96 / 5** on English into Spanish/Chinese/Japanese/German (vs Google 4.77, Azure 4.65, Whisper + GPT-4o-mini 4.63), median latency **1.5 s** vs 27 s for the Whisper + GPT pipeline, and **first place on all 16** harder non-English corridors. Published by [LiveLingo Research](https://www.livelingo.io/research). All data is **CC-BY 4.0**, reuse it freely with attribution.
 
 Live leaderboards: [16-corridor benchmark](https://www.livelingo.io/research/voice-corridor-benchmark-2026) · [latency + comprehension benchmark](https://www.livelingo.io/research/benchmark-2026)
 
-## Voice-corridor benchmark — 16 language pairs
+## Voice-corridor benchmark: 16 language pairs
 
 Real-time voice translation accuracy across 16 migrant-worker language corridors. LiveLingo ranked #1 on all 16 pairs. Evaluated 2026-07-06.
 
@@ -69,4 +69,4 @@ Per-corridor permalinks for citing a single pair: `https://www.livelingo.io/rese
 
 ## License
 
-[CC-BY 4.0](LICENSE). Attribution: “LiveLingo Research — livelingo.io”.
+[CC-BY 4.0](LICENSE). Attribution: “LiveLingo Research, livelingo.io”.
