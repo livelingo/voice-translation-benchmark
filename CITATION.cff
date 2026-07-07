@@ -8,6 +8,7 @@ authors:
 year: 2026
 url: "https://www.livelingo.io/research/voice-corridor-benchmark-2026"
 repository: "https://github.com/livelingo/voice-translation-benchmark"
+doi: 10.5281/zenodo.21250032
 license: CC-BY-4.0
 version: "1.0"
 date-released: "2026-07-07"

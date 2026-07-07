@@ -1,5 +1,7 @@
 # LiveLingo Voice Translation Benchmarks (2026)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21250032.svg)](https://doi.org/10.5281/zenodo.21250032)
+
 Open benchmark data for **real-time voice translation quality**: speech in, translation out, scored for comprehension fidelity by three independent LLM judges (GPT-4o, Gemini 2.5 Flash, Claude). Published by [LiveLingo Research](https://www.livelingo.io/research). All data is **CC-BY 4.0** — reuse it freely with attribution.
 
 Live leaderboards: [16-corridor benchmark](https://www.livelingo.io/research/voice-corridor-benchmark-2026) · [latency + comprehension benchmark](https://www.livelingo.io/research/benchmark-2026)
@@ -58,6 +60,7 @@ Every system receives **identical source audio** and runs its own complete speec
   title        = {LiveLingo Voice Translation Benchmarks 2026},
   year         = {2026},
   howpublished = {\url{https://www.livelingo.io/research/voice-corridor-benchmark-2026}},
+  doi          = {10.5281/zenodo.21250032},
   note         = {Data: CC-BY 4.0, https://github.com/livelingo/voice-translation-benchmark},
 }
 ```
