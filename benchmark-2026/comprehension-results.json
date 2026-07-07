@@ -1,0 +1,5404 @@
+{
+  "benchmark": "LiveLingo Real-Time Voice Translation Benchmark 2026 — Section 2 Comprehension Fidelity",
+  "version": "1.0",
+  "url": "https://www.livelingo.io/research/benchmark-2026",
+  "license": "CC-BY-4.0",
+  "methodology": {
+    "audio": "30 English source utterances. 16 kHz mono WAV. Download audio.zip at the same path.",
+    "language_pairs": [
+      "en->es",
+      "en->zh-CN",
+      "en->ja",
+      "en->de"
+    ],
+    "cells_per_pair": 30,
+    "total_cells": 120,
+    "systems_compared": [
+      "LiveLingo",
+      "Whisper + GPT-4o-mini",
+      "Azure Speech Translation",
+      "Google Cloud Translation v3"
+    ],
+    "judges": [
+      "GPT-4o (gpt-4o-2024-11-20)",
+      "Gemini 2.5 Flash (gemini-2.5-flash, non-thinking)",
+      "Claude Sonnet 4.6 (claude-sonnet-4-6)"
+    ],
+    "rubric": "0-5 comprehension fidelity. Penalize: wrong word substitution, missing entities/numbers, punctuation that changes sentence type, language-script mixing. Do not penalize: stylistic register or valid synonyms.",
+    "composite_score": "Arithmetic mean of the three independent judge scores per cell.",
+    "tie_threshold": 0.05
+  },
+  "domains": [
+    "restaurant",
+    "hotel",
+    "family",
+    "business",
+    "daily"
+  ],
+  "cells": [
+    {
+      "sentence_id": "rest-01",
+      "target_language": "Simplified Chinese",
+      "target_short": "zh-CN",
+      "domain": "restaurant",
+      "source": "Could I get the steak medium rare, with a side salad instead of fries?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "我可以把牛排要七分熟，配一份沙拉而不是薯条吗？",
+          "scores": {
+            "gpt_4o": 4,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.5
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "我可以要一份五分熟的牛排，配一份沙拉而不是薯条吗？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "我能点牛排五分熟，配一份沙拉代替薯条吗？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "牛排可以五分熟吗？配菜沙拉可以代替薯条吗？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "rest-01",
+      "target_language": "Japanese",
+      "target_short": "ja",
+      "domain": "restaurant",
+      "source": "Could I get the steak medium rare, with a side salad instead of fries?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "ステーキはミディアムレアで、フライドポテトの代わりにサイドサラダをお願いします。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "ステーキをミディアムレアで、フライの代わりにサイドサラダをお願いできますか？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "ステーキはミディアムレアで、フライドポテトの代わりにサイドサラダを添えてもらえますか?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "ステーキをミディアムレアで、付け合わせのサラダをフライドポテトの代わりにいただけますか？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "rest-01",
+      "target_language": "German",
+      "target_short": "de",
+      "domain": "restaurant",
+      "source": "Could I get the steak medium rare, with a side salad instead of fries?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Könnte ich das Steak medium rare mit einem Beilagensalat statt Pommes bekommen?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Könnte ich das Steak medium rare mit einem Beilagensalat anstelle von Pommes bekommen?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Könnte ich das Steak medium rare mit einem Beilagensalat statt Pommes bekommen?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Könnte ich das Steak medium rare mit einem Beilagensalat anstelle von Pommes bekommen?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "rest-02",
+      "target_language": "Simplified Chinese",
+      "target_short": "zh-CN",
+      "domain": "restaurant",
+      "source": "We're celebrating an anniversary. Do you have any wine pairings you'd recommend?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "我们在庆祝纪念日，您有什么推荐的葡萄酒搭配吗？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "我们正在庆祝周年纪念。你有什么推荐的葡萄酒搭配吗？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "我们在庆祝周年纪念。你有什么葡萄酒搭配推荐吗？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "我们在周年纪念日庆祝。 您有什么葡萄酒搭配推荐吗？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 4,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.5
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "rest-02",
+      "target_language": "Japanese",
+      "target_short": "ja",
+      "domain": "restaurant",
+      "source": "We're celebrating an anniversary. Do you have any wine pairings you'd recommend?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "記念日を祝うんですが、おすすめのワインのペアリングはありますか？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "記念日を祝っています。おすすめのワインのペアリングはありますか？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "記念日を祝っているんだ。おすすめのワインペアリングはありますか?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "私たちは記念日を祝います おすすめのワインのペアリングはありますか？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "rest-02",
+      "target_language": "German",
+      "target_short": "de",
+      "domain": "restaurant",
+      "source": "We're celebrating an anniversary. Do you have any wine pairings you'd recommend?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Wir feiern ein Jubiläum. Haben Sie Weinempfehlungen, die Sie empfehlen würden?",
+          "scores": {
+            "gpt_4o": 4,
+            "gemini_2_5_flash": 4,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Wir feiern ein Jubiläum. Haben Sie Weinempfehlungen, die Sie empfehlen würden?",
+          "scores": {
+            "gpt_4o": 4,
+            "gemini_2_5_flash": 4,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Wir feiern ein Jubiläum. Hast du Weinkombinationen, die du empfehlen würdest?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Wir feiern ein Jubiläum Haben Sie Weinempfehlungen für die passende Weinbegleitung?",
+          "scores": {
+            "gpt_4o": 4,
+            "gemini_2_5_flash": 4,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "rest-03",
+      "target_language": "Simplified Chinese",
+      "target_short": "zh-CN",
+      "domain": "restaurant",
+      "source": "I'm allergic to shellfish. Can you check if there's anything in the sauce?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "我对贝类过敏。你能检查一下酱汁里有没有任何东西吗？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 3,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "我对贝类过敏。你能检查一下酱汁里有没有什么吗？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "我对贝类过敏。你能检查一下酱里有没有什么东西吗？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "我对贝类过敏，你能帮我查一下酱汁里有没有贝类吗？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "rest-03",
+      "target_language": "Japanese",
+      "target_short": "ja",
+      "domain": "restaurant",
+      "source": "I'm allergic to shellfish. Can you check if there's anything in the sauce?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "私は甲殻類にアレルギーがあります。ソースに何か入っていないか確認してもらえますか？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "私は甲殻類アレルギーです。ソースに何か入っているか確認してもらえますか？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "甲殻類アレルギーがあります。ソースに何か入ってないか確認してくれる?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "私は甲殻類アレルギーなのですが、ソースに何か入っていないか確認してもらえますか？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "rest-03",
+      "target_language": "German",
+      "target_short": "de",
+      "domain": "restaurant",
+      "source": "I'm allergic to shellfish. Can you check if there's anything in the sauce?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Ich bin allergisch gegen Schalentiere. Können Sie bitte prüfen, ob etwas in der Soße ist?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Ich bin allergisch gegen Schalentiere. Können Sie überprüfen, ob etwas in der Sauce ist?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Ich bin allergisch gegen Schalentieren. Kannst du prüfen, ob etwas in der Soße ist?",
+          "scores": {
+            "gpt_4o": 4,
+            "gemini_2_5_flash": 4,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Ich bin gegen Schalentiere allergisch. Könnten Sie bitte überprüfen, ob etwas in der Soße enthalten ist?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "rest-04",
+      "target_language": "Simplified Chinese",
+      "target_short": "zh-CN",
+      "domain": "restaurant",
+      "source": "Can we split the bill three ways? Two of us are paying with cards and one with cash.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "我们可以把账单分成三份吗？我们两个人用卡付款，一个人用现金。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "我们可以把账单分成三份吗？我们两个人用卡支付，一个人用现金。 我们。",
+          "scores": {
+            "gpt_4o": 4,
+            "gemini_2_5_flash": 3,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 3.5
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "我们能不能三方分账？ 我们两个人用信用卡付款，一个用现金付款。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "我们可以三人平分账单吗？ 我们当中两人用银行卡支付，一人用现金支付。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "rest-04",
+      "target_language": "Japanese",
+      "target_short": "ja",
+      "domain": "restaurant",
+      "source": "Can we split the bill three ways? Two of us are paying with cards and one with cash.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "お会計を3等分にできますか？2人はカードで、1人は現金で支払います。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "3人で割り勘にできますか？2人はカードで、1人は現金で支払います。 私たち。",
+          "scores": {
+            "gpt_4o": 4,
+            "gemini_2_5_flash": 3,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 3.5
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "3人で割り勘できますか? 2人はカードで、もう1人は現金で支払っています。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "3人で割り勘できますか？ 私たち2人はカードで支払い、1人は現金で支払います。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "rest-04",
+      "target_language": "German",
+      "target_short": "de",
+      "domain": "restaurant",
+      "source": "Can we split the bill three ways? Two of us are paying with cards and one with cash.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Können wir die Rechnung zu dritt aufteilen? Zwei von uns zahlen mit Karten und einer mit Bargeld.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Können wir die Rechnung auf drei aufteilen? Zwei von uns zahlen mit Karten und einer mit Bargeld. uns.",
+          "scores": {
+            "gpt_4o": 4,
+            "gemini_2_5_flash": 3,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 3.5
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Können wir die Rechnung zu dritt aufteilen? Zwei von uns zahlen mit Karten und einer mit Bargeld.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Können wir die Rechnung zu dritt aufteilen? Zwei von uns bezahlen mit Karte und einer mit Bargeld.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "rest-05",
+      "target_language": "Simplified Chinese",
+      "target_short": "zh-CN",
+      "domain": "restaurant",
+      "source": "What's in the seasonal special? Is it spicy?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "季节特餐里有什么？辣吗？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "季节特供有什么？是辣的吗？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "季节性特别节目里有什么？辣吗？",
+          "scores": {
+            "gpt_4o": 2,
+            "gemini_2_5_flash": 2,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 2.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "季节特供里有什么？辣吗？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "rest-05",
+      "target_language": "Japanese",
+      "target_short": "ja",
+      "domain": "restaurant",
+      "source": "What's in the seasonal special? Is it spicy?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "季節のスペシャルには何が入っていますか？ 辛いですか？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "季節限定メニューには何が入っていますか？辛いですか？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "季節限定の特別番組には何が入っていますか?辛い?",
+          "scores": {
+            "gpt_4o": 4,
+            "gemini_2_5_flash": 2,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 3.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "季節限定メニューの中身は？辛い？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "rest-05",
+      "target_language": "German",
+      "target_short": "de",
+      "domain": "restaurant",
+      "source": "What's in the seasonal special? Is it spicy?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Was ist im saisonalen Sonderangebot? Ist es scharf?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Was ist im saisonalen Spezial? Ist es scharf?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Was ist im saisonalen Spezialität? Ist es scharf?",
+          "scores": {
+            "gpt_4o": 4,
+            "gemini_2_5_flash": 4,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Was ist in der saisonalen Spezialität enthalten? Ist sie scharf?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "rest-06",
+      "target_language": "Simplified Chinese",
+      "target_short": "zh-CN",
+      "domain": "restaurant",
+      "source": "Could we get the check whenever you have a moment?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "您有空的时候能把账单给我们吗？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "您有空的时候能给我们结账吗？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "您有空的时候能结账吗？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "您什么时候有空把支票给我们？",
+          "scores": {
+            "gpt_4o": 2,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 3.5
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "rest-06",
+      "target_language": "Japanese",
+      "target_short": "ja",
+      "domain": "restaurant",
+      "source": "Could we get the check whenever you have a moment?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "お時間があるときにお会計をお願いします。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "お時間があるときにお会計をお願いできますか？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "お時間があるときにお支払いいただけますか?",
+          "scores": {
+            "gpt_4o": 2,
+            "gemini_2_5_flash": 4,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 3.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "お時間のある時にいつでもお会計をお願いできますか？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "rest-06",
+      "target_language": "German",
+      "target_short": "de",
+      "domain": "restaurant",
+      "source": "Could we get the check whenever you have a moment?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Könnten wir die Rechnung erhalten, sobald Sie einen Moment Zeit haben?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Könnten wir die Rechnung bekommen, wann immer Sie einen Moment Zeit haben?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Könnten wir die Rechnung bekommen, wann immer du Zeit hast?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 4,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.5
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Könnten wir den Scheck bekommen, sobald Sie einen Moment Zeit haben?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "hotel-01",
+      "target_language": "Simplified Chinese",
+      "target_short": "zh-CN",
+      "domain": "hotel",
+      "source": "I'd like to extend my stay by two nights. Is that possible?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "我想把住宿延长两晚。可以吗？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "我想延长我的住宿两晚。可以吗？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "我想延长住宿两晚。这可能吗？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "我想续住两晚。 有可能吗？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "hotel-01",
+      "target_language": "Japanese",
+      "target_short": "ja",
+      "domain": "hotel",
+      "source": "I'd like to extend my stay by two nights. Is that possible?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "宿泊をあと2泊延長したいのですが、可能でしょうか？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "滞在を2泊延長したいのですが、それは可能ですか？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "滞在を2泊延長したいのですが。それは可能でしょうか?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "滞在を2泊延長したいのですが。 それは可能ですか？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "hotel-01",
+      "target_language": "German",
+      "target_short": "de",
+      "domain": "hotel",
+      "source": "I'd like to extend my stay by two nights. Is that possible?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Ich möchte meinen Aufenthalt um 2 Nächte verlängern. Ist das möglich?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Ich würde gerne meinen Aufenthalt um zwei Nächte verlängern. Ist das möglich?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Ich möchte meinen Aufenthalt um zwei Nächte verlängern. Ist das möglich?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Ich möchte meinen Aufenthalt um zwei Nächte verlängern. Ist das möglich?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "hotel-02",
+      "target_language": "Simplified Chinese",
+      "target_short": "zh-CN",
+      "domain": "hotel",
+      "source": "The room is too cold and the wifi isn't working. Could someone come up?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "房间太冷，Wi‑Fi也不工作。能有人上来吗？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "房间太冷了，Wi-Fi也不工作。能有人上来吗？ 向上。",
+          "scores": {
+            "gpt_4o": 2,
+            "gemini_2_5_flash": 3,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 2.5
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "房间太冷了，Wi-Fi也坏了。 有人能上来吗？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "房间太冷了，而且Wi-Fi也连不上。 有人能上来吗？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "hotel-02",
+      "target_language": "Japanese",
+      "target_short": "ja",
+      "domain": "hotel",
+      "source": "The room is too cold and the wifi isn't working. Could someone come up?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "部屋が寒すぎて、Wi‑Fiが繋がりません。誰か上に来てくれませんか？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "部屋が寒すぎて、Wi-Fiが動いていません。誰か来てくれませんか？ 上。",
+          "scores": {
+            "gpt_4o": 2,
+            "gemini_2_5_flash": 3,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 2.5
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "部屋は寒すぎてWi-Fiも使えない。 誰か上に来てくれませんか?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "部屋が寒すぎるし、Wi-Fiも使えない。 誰か来てくれないか",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "hotel-02",
+      "target_language": "German",
+      "target_short": "de",
+      "domain": "hotel",
+      "source": "The room is too cold and the wifi isn't working. Could someone come up?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Das Zimmer ist zu kalt, und das WLAN funktioniert nicht. Könnte jemand heraufkommen?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Der Raum ist zu kalt und das WLAN funktioniert nicht. Könnte jemand hochkommen? hoch.",
+          "scores": {
+            "gpt_4o": 4,
+            "gemini_2_5_flash": 3,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 3.5
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Das Zimmer ist zu kalt und das WLAN funktioniert nicht. Könnte jemand hochkommen?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Das Zimmer ist zu kalt und das WLAN funktioniert nicht. Könnte jemand vorbeikommen?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 3,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "hotel-03",
+      "target_language": "Simplified Chinese",
+      "target_short": "zh-CN",
+      "domain": "hotel",
+      "source": "Can we get an early check-in tomorrow? Our flight lands at nine in the morning.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "我们明天可以提前入住吗？我们的航班上午9点抵达。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "我们明天可以提前入住吗？我们的航班早上9点到达。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "我们明天能提前报到吗？我们的航班是早上9点降落。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "我们明天可以提前办理登机手续吗？我们的航班早上9点到达。",
+          "scores": {
+            "gpt_4o": 2,
+            "gemini_2_5_flash": 2,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 2.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "hotel-03",
+      "target_language": "Japanese",
+      "target_short": "ja",
+      "domain": "hotel",
+      "source": "Can we get an early check-in tomorrow? Our flight lands at nine in the morning.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "明日、早めのチェックインは可能ですか？フライトは朝9時に到着します。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "明日、早めのチェックインはできますか？私たちのフライトは朝の9時に到着します。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "明日早くチェックインできますか?私たちのフライトは朝9時に着陸します。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "明日、早めのチェックインはできますか？私たちのフライトは午前9時に到着します。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "hotel-03",
+      "target_language": "German",
+      "target_short": "de",
+      "domain": "hotel",
+      "source": "Can we get an early check-in tomorrow? Our flight lands at nine in the morning.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Können wir morgen ein frühes Check‑in bekommen? Unser Flug landet um 9 Uhr morgens.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Können wir morgen früher einchecken? Unser Flug landet um 9 Uhr morgens.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Können wir morgen früh einchecken? Unser Flug landet um 9:00 Uhr morgens.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Können wir morgen früh einchecken? Unser Flug landet um 9 Uhr morgens.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "hotel-04",
+      "target_language": "Simplified Chinese",
+      "target_short": "zh-CN",
+      "domain": "hotel",
+      "source": "Where's the closest pharmacy that's open late? My daughter has a fever.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "最近的、营业到很晚的药店在哪里？我女儿发烧了。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "最近的药店在哪里？我女儿发烧了。",
+          "scores": {
+            "gpt_4o": 4,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.5
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "最近的深夜开门药房在哪里？我女儿发烧了。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "哪里有最近的、营业到很晚的药店？ 我女儿发烧了",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "hotel-04",
+      "target_language": "Japanese",
+      "target_short": "ja",
+      "domain": "hotel",
+      "source": "Where's the closest pharmacy that's open late? My daughter has a fever.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "遅くまで営業している一番近い薬局はどこですか？娘が熱を出しています。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "遅くまで開いている最寄りの薬局はどこですか？娘が熱を出しています。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "遅くまで開いている一番近い薬局はどこですか?娘が熱がある。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "夜遅くまで営業している最寄りの薬局はどこですか？ 娘が熱を出している",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "hotel-04",
+      "target_language": "German",
+      "target_short": "de",
+      "domain": "hotel",
+      "source": "Where's the closest pharmacy that's open late? My daughter has a fever.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Wo ist die nächste Apotheke, die bis spät geöffnet hat? Meine Tochter hat Fieber.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Wo ist die nächste Apotheke, die lange geöffnet hat? Meine Tochter hat Fieber.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Wo ist die nächstgelegene Apotheke, die bis spät geöffnet hat? Meine Tochter hat Fieber.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Wo ist die nächste Apotheke, die lange geöffnet hat? Meine Tochter hat Fieber.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "hotel-05",
+      "target_language": "Simplified Chinese",
+      "target_short": "zh-CN",
+      "domain": "hotel",
+      "source": "Could you arrange a taxi to the airport for six in the morning tomorrow?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "您能安排明天早上6点的机场出租车吗？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "你能为我安排明天早上六点去机场的出租车吗？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "你能帮我安排明天早上6点去机场的出租车吗？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "您能安排明天早上六点到机场的出租车吗？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "hotel-05",
+      "target_language": "Japanese",
+      "target_short": "ja",
+      "domain": "hotel",
+      "source": "Could you arrange a taxi to the airport for six in the morning tomorrow?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "明日の朝6時に空港行きのタクシーを手配していただけますか？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "明日の朝6時に空港までのタクシーを手配していただけますか？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "明日の朝6時に空港までのタクシーを手配できますか?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "明日の朝6時に空港までタクシーを手配していただけますか？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "hotel-05",
+      "target_language": "German",
+      "target_short": "de",
+      "domain": "hotel",
+      "source": "Could you arrange a taxi to the airport for six in the morning tomorrow?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Könnten Sie für morgen um 6 Uhr morgens ein Taxi zum Flughafen organisieren?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Könnten Sie ein Taxi zum Flughafen für morgen um 6 Uhr morgens bestellen?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Könnten Sie morgen um 6 Uhr morgens ein Taxi zum Flughafen organisieren?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Könnten Sie mir morgen früh um sechs Uhr ein Taxi zum Flughafen organisieren?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "hotel-06",
+      "target_language": "Simplified Chinese",
+      "target_short": "zh-CN",
+      "domain": "hotel",
+      "source": "Is breakfast included in the room rate, or is it an extra charge?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "早餐包含在房价内吗，还是需要额外付费？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "早餐包含在房费中吗，还是需要额外收费？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "早餐包含在房价里吗，还是需要额外收费？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "房价包含早餐吗？还是需要额外付费？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "hotel-06",
+      "target_language": "Japanese",
+      "target_short": "ja",
+      "domain": "hotel",
+      "source": "Is breakfast included in the room rate, or is it an extra charge?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "朝食は宿泊料金に含まれていますか、それとも別料金ですか？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "朝食は部屋代に含まれていますか、それとも追加料金がかかりますか？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "朝食は部屋料金に含まれていますか、それとも追加料金ですか?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "朝食は宿泊料金に含まれていますか、それとも追加料金がかかりますか？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "hotel-06",
+      "target_language": "German",
+      "target_short": "de",
+      "domain": "hotel",
+      "source": "Is breakfast included in the room rate, or is it an extra charge?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Ist das Frühstück im Zimmerpreis inbegriffen oder wird es extra berechnet?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Ist das Frühstück im Zimmerpreis enthalten oder fällt dafür eine zusätzliche Gebühr an?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Ist das Frühstück im Zimmerpreis enthalten oder kostet das zusätzlich?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Ist das Frühstück im Zimmerpreis inbegriffen oder wird es extra berechnet?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "fam-01",
+      "target_language": "Simplified Chinese",
+      "target_short": "zh-CN",
+      "domain": "family",
+      "source": "I know you're tired, but we need to talk about what happened at dinner.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "我知道你很累，但我们需要谈谈晚餐时发生的事。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "我知道你很累，但我们需要谈谈晚餐时发生的事情。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "我知道你累了，但我们得谈谈晚饭时发生的事。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "我知道你很累，但我们需要谈谈晚餐时发生的事情。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "fam-01",
+      "target_language": "Japanese",
+      "target_short": "ja",
+      "domain": "family",
+      "source": "I know you're tired, but we need to talk about what happened at dinner.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "疲れているのはわかっていますが、夕食で起きたことについて話す必要があります。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "疲れているのはわかっていますが、夕食で起こったことについて話す必要があります。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "疲れているのはわかるけど、夕食の時に起きたことについて話さなきゃいけない。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "疲れているのは分かっているけど、夕食で何があったのか話し合う必要がある。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "fam-01",
+      "target_language": "German",
+      "target_short": "de",
+      "domain": "family",
+      "source": "I know you're tired, but we need to talk about what happened at dinner.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Ich weiß, dass du müde bist, aber wir müssen über das, was beim Abendessen passiert ist, sprechen.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Ich weiß, dass du müde bist, aber wir müssen über das sprechen, was beim Abendessen passiert ist.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Ich weiß, du bist müde, aber wir müssen über das reden, was beim Abendessen passiert ist.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Ich weiß, du bist müde, aber wir müssen über das reden, was beim Abendessen passiert ist.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "fam-02",
+      "target_language": "Simplified Chinese",
+      "target_short": "zh-CN",
+      "domain": "family",
+      "source": "Mom called this morning. She wants us to visit next weekend if we can.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "妈妈今天早上打电话。她想让我们如果可以的话，下个周末去拜访。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "妈妈今天早上打电话了。她希望我们下个周末能去看她，如果可以的话。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "妈妈今天早上打电话来了。她希望我们下周末能去看她。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "妈妈今天早上打电话来了 她希望我们下周末能去拜访她。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "fam-02",
+      "target_language": "Japanese",
+      "target_short": "ja",
+      "domain": "family",
+      "source": "Mom called this morning. She wants us to visit next weekend if we can.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "母が今朝電話してきて、来週の週末に私たちが訪ねてくれるといいと言っていた。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 4,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.5
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "今朝、母から電話がありました。来週末に私たちが行けるなら、訪れてほしいそうです。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "今朝、ママから電話があった。もし可能なら来週末に訪ねてほしいと言われています。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "今朝、母から電話がありました。 彼女は来週末に私たちが来られるなら訪ねてきてほしいと言っています",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 4,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.5
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "fam-02",
+      "target_language": "German",
+      "target_short": "de",
+      "domain": "family",
+      "source": "Mom called this morning. She wants us to visit next weekend if we can.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Mama hat heute Morgen angerufen. Sie möchte, dass wir nächstes Wochenende zu ihr kommen, wenn wir können.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Mama hat heute Morgen angerufen. Sie möchte, dass wir nächstes Wochenende besuchen, wenn wir können.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 4,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.5
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Mama hat heute Morgen angerufen. Sie möchte, dass wir nächstes Wochenende zu Besuch kommen, wenn wir können.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Meine Mutter hat heute Morgen angerufen. Sie möchte, dass wir sie nächstes Wochenende besuchen, wenn es uns möglich ist.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "fam-03",
+      "target_language": "Simplified Chinese",
+      "target_short": "zh-CN",
+      "domain": "family",
+      "source": "I'm sorry I was harsh earlier. I was stressed about work and took it out on you.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "对不起，我刚才太严厉了。我因为工作压力大，把情绪发泄在你身上。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "对不起，我之前说得很 harsh，我因为工作压力大而把情绪发泄在你身上。",
+          "scores": {
+            "gpt_4o": 3,
+            "gemini_2_5_flash": 3,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 3.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "抱歉刚才我说得太严厉了。我工作压力大，把气撒在你身上。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "对不起，我之前语气太重了，我工作压力很大，就把气撒在你身上了。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "fam-03",
+      "target_language": "Japanese",
+      "target_short": "ja",
+      "domain": "family",
+      "source": "I'm sorry I was harsh earlier. I was stressed about work and took it out on you.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "先ほどは厳しくしてしまい、申し訳ありません。仕事のストレスが原因で、あなたに当たってしまいました。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "前は厳しくしてごめんなさい、仕事でストレスが溜まっていて、あなたに当たってしまいました。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "さっきは厳しく言ってごめんなさい。仕事のことでストレスが溜まって、あなたに当たったの。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "先ほどはひどい態度をとってしまい、ごめんなさい。仕事のストレスであなたに八つ当たりしてしまいました。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "fam-03",
+      "target_language": "German",
+      "target_short": "de",
+      "domain": "family",
+      "source": "I'm sorry I was harsh earlier. I was stressed about work and took it out on you.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Es tut mir leid, dass ich vorher so hart war. Ich war wegen der Arbeit gestresst und habe das an dir ausgelassen.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Es tut mir leid, dass ich vorhin hart war, ich war gestresst wegen der Arbeit und habe es an dir ausgelassen.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Es tut mir leid, dass ich vorhin so streng war. Ich war wegen der Arbeit gestresst und habe es an dir ausgelassen.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Es tut mir leid, dass ich vorhin so harsch war. Ich war wegen der Arbeit gestresst und habe das an dir ausgelassen.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "fam-04",
+      "target_language": "Simplified Chinese",
+      "target_short": "zh-CN",
+      "domain": "family",
+      "source": "The kids really miss their grandparents. Maybe we should plan a visit soon.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "孩子们真的很想念祖父母。也许我们应该尽快安排一次探访。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "孩子们真的很想念他们的祖父母。也许我们应该尽快计划一次拜访。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "孩子们真的很想念他们的祖父母。也许我们应该尽快计划一次拜访。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "孩子们非常想念他们的祖父母。 或许我们应该尽快安排一次拜访。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "fam-04",
+      "target_language": "Japanese",
+      "target_short": "ja",
+      "domain": "family",
+      "source": "The kids really miss their grandparents. Maybe we should plan a visit soon.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "子どもたちは本当に祖父母が恋しいです。近いうちに訪問の計画を立てた方がいいかもしれません。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "子供たちは本当に祖父母を恋しがっています。近いうちに訪問を計画した方がいいかもしれません。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "子どもたちは本当に祖父母が恋しいです。近いうちに訪問の計画を立てたほうがいいかもね。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "子供たちは祖父母をとても恋しがっている。 近いうちに訪問を計画した方がいいかもしれない",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "fam-04",
+      "target_language": "German",
+      "target_short": "de",
+      "domain": "family",
+      "source": "The kids really miss their grandparents. Maybe we should plan a visit soon.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Die Kinder vermissen ihre Großeltern sehr. Vielleicht sollten wir bald einen Besuch planen.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Die Kinder vermissen ihre Großeltern wirklich. Vielleicht sollten wir bald einen Besuch planen.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Die Kinder vermissen ihre Großeltern wirklich. Vielleicht sollten wir bald einen Besuch planen.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Die Kinder vermissen ihre Großeltern sehr. Vielleicht sollten wir bald einen Besuch planen.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "fam-05",
+      "target_language": "Simplified Chinese",
+      "target_short": "zh-CN",
+      "domain": "family",
+      "source": "I don't know how to tell my parents about this. They're going to be really upset.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "我不知道该怎么把这件事告诉我的父母。他们会非常生气。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "我不知道该如何告诉我的父母这件事。他们会非常生气。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "我不知道该怎么告诉父母这件事。他们会非常生气的。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "我不知道该怎么跟父母说这件事，他们肯定会很伤心的。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "fam-05",
+      "target_language": "Japanese",
+      "target_short": "ja",
+      "domain": "family",
+      "source": "I don't know how to tell my parents about this. They're going to be really upset.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "どうやって両親にこれを伝えたらいいかわからない。両親は本当に怒るだろう。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "これについて両親にどう伝えればいいかわからない。彼らは本当に怒るだろう。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "両親にどう伝えればいいのかわかりません。彼らは本当に怒るだろう。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "両親にどう伝えたらいいのかわからない。きっとすごく怒るだろう。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "fam-05",
+      "target_language": "German",
+      "target_short": "de",
+      "domain": "family",
+      "source": "I don't know how to tell my parents about this. They're going to be really upset.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Ich weiß nicht, wie ich das meinen Eltern sagen soll. Sie werden wirklich verärgert sein.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Ich weiß nicht, wie ich meinen Eltern davon erzählen soll. Sie werden wirklich verärgert sein.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Ich weiß nicht, wie ich es meinen Eltern sagen soll. Sie werden wirklich aufgebracht sein.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Ich weiß nicht, wie ich das meinen Eltern sagen soll, sie werden total verärgert sein.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "fam-06",
+      "target_language": "Simplified Chinese",
+      "target_short": "zh-CN",
+      "domain": "family",
+      "source": "Can we talk about this after the kids go to bed? I don't want them to overhear.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "我们可以等孩子们睡觉后再谈这件事吗？我不想让他们听到。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "我们可以在孩子们睡觉后再谈这个吗？我不想让他们听到。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "孩子们睡了我们能谈吗？ 我不想让他们听见。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "等孩子们睡着后我们再谈这件事吧 我不想让他们听到",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "fam-06",
+      "target_language": "Japanese",
+      "target_short": "ja",
+      "domain": "family",
+      "source": "Can we talk about this after the kids go to bed? I don't want them to overhear.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "子供たちが寝た後でこのことを話せますか？聞かれたくないんです。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "子供たちが寝た後にこのことについて話せますか？彼らに聞かれたくないです。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "子どもたちが寝た後で話せる? 聞こえてほしくないんだ。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "子供たちが寝た後でこのことについて話し合えますか？ 彼らに聞かれたくない",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "fam-06",
+      "target_language": "German",
+      "target_short": "de",
+      "domain": "family",
+      "source": "Can we talk about this after the kids go to bed? I don't want them to overhear.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Können wir darüber sprechen, nachdem die Kinder ins Bett gegangen sind? Ich möchte nicht, dass sie mithören.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Können wir darüber sprechen, nachdem die Kinder ins Bett gegangen sind? Ich möchte nicht, dass sie es mitbekommen.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Können wir darüber reden, nachdem die Kinder ins Bett gegangen sind? Ich will nicht, dass sie mithören.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Können wir darüber reden, nachdem die Kinder im Bett sind? Ich möchte nicht, dass sie es mithören.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "biz-01",
+      "target_language": "Simplified Chinese",
+      "target_short": "zh-CN",
+      "domain": "business",
+      "source": "Can we push the kickoff meeting to Tuesday? Sarah's flying in late on Monday.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "我们能把启动会议推迟到星期二吗？Sarah 周一晚点到。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "我们可以把启动会议推迟到星期二吗？莎拉星期一晚些时候才到。 星期一。",
+          "scores": {
+            "gpt_4o": 4,
+            "gemini_2_5_flash": 3,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 3.5
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "我们能把启动会议推迟到周二吗？ 莎拉周一晚些时候飞过来。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "我们能否将启动会议推迟到周二？ 莎拉周一晚些时候会飞过来。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "biz-01",
+      "target_language": "Japanese",
+      "target_short": "ja",
+      "domain": "business",
+      "source": "Can we push the kickoff meeting to Tuesday? Sarah's flying in late on Monday.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "キックオフミーティングを火曜日に延期できますか？サラは月曜日に遅れて到着します。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "キックオフミーティングを火曜日に延期できますか？サラは月曜日の遅い時間に到着します。 月曜日。",
+          "scores": {
+            "gpt_4o": 4,
+            "gemini_2_5_flash": 3,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 3.5
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "キックオフミーティングを火曜日に延期できる? サラは月曜の遅い時間に飛行機で来るんだ。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "キックオフミーティングを火曜日に延期できますか？ サラは月曜日の遅い時間に飛行機で到着する",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 4,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.5
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "biz-01",
+      "target_language": "German",
+      "target_short": "de",
+      "domain": "business",
+      "source": "Can we push the kickoff meeting to Tuesday? Sarah's flying in late on Monday.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Können wir das Kickoff‑Meeting auf Dienstag verschieben? Sarah kommt am Montag spät an.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Können wir das Kickoff-Meeting auf Dienstag verschieben? Sarah kommt am Montag spät an. Montag.",
+          "scores": {
+            "gpt_4o": 4,
+            "gemini_2_5_flash": 4,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Können wir das Kickoff-Meeting auf Dienstag verschieben? Sarah fliegt am Montag spät an.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Können wir das Auftaktmeeting auf Dienstag verschieben? Sarah kommt am späten Montag an.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "biz-02",
+      "target_language": "Simplified Chinese",
+      "target_short": "zh-CN",
+      "domain": "business",
+      "source": "Our quarterly numbers came in below consensus, mostly due to supply chain delays.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "我们的季度数据低于共识，主要是由于供应链延迟。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "我们的季度数字低于市场预期，主要是由于供应链延迟。 方式。 你",
+          "scores": {
+            "gpt_4o": 2,
+            "gemini_2_5_flash": 2,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 2.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "我们的季度数据低于市场共识，主要是由于供应链延误。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "由于供应链延迟，我们的季度业绩低于预期。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "biz-02",
+      "target_language": "Japanese",
+      "target_short": "ja",
+      "domain": "business",
+      "source": "Our quarterly numbers came in below consensus, mostly due to supply chain delays.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "当社の四半期の数値はコンセンサスを下回り、主にサプライチェーンの遅延が原因でした。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "四半期の数字はコンセンサスを下回り、主にサプライチェーンの遅延が原因です。 方法。 あなた",
+          "scores": {
+            "gpt_4o": 2,
+            "gemini_2_5_flash": 2,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 2.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "四半期の数字はコンセンサスを下回り、主にサプライチェーンの遅延が原因でした。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "当社の四半期業績は、主にサプライチェーンの遅延により、市場予想を下回りました。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "biz-02",
+      "target_language": "German",
+      "target_short": "de",
+      "domain": "business",
+      "source": "Our quarterly numbers came in below consensus, mostly due to supply chain delays.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Unsere Quartalszahlen lagen unter dem Konsens, hauptsächlich aufgrund von Lieferkettenverzögerungen.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Unsere Quartalszahlen lagen unter den Erwartungen, hauptsächlich aufgrund von Lieferkettenverzögerungen. Wege. du",
+          "scores": {
+            "gpt_4o": 2,
+            "gemini_2_5_flash": 2,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 2.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Unsere Quartalszahlen lagen unter dem Konsens, hauptsächlich aufgrund von Verzögerungen in der Lieferkette.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Unsere Quartalszahlen lagen unter den Erwartungen, hauptsächlich aufgrund von Verzögerungen in der Lieferkette.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "biz-03",
+      "target_language": "Simplified Chinese",
+      "target_short": "zh-CN",
+      "domain": "business",
+      "source": "I'll send the updated proposal by end of week, but we need your input on the timeline.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "我将在本周末前发送更新的提案，但我们需要您对时间表的意见。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "我将在本周末之前发送更新的提案，但我们需要您对时间表的意见。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "我会在本周末前发送更新后的提案，但我们需要你对时间表的意见。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "我会在本周结束前发送更新后的方案，但我们需要您对时间安排提出意见。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "biz-03",
+      "target_language": "Japanese",
+      "target_short": "ja",
+      "domain": "business",
+      "source": "I'll send the updated proposal by end of week, but we need your input on the timeline.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "今週末までに更新した提案書を送りますが、タイムラインについてご意見が必要です。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "週の終わりまでに更新された提案を送りますが、タイムラインについてあなたの意見が必要です。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "今週末までに更新された提案書を送りますが、スケジュールについては皆さんの意見が必要です。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "今週末までに更新された提案書をお送りしますが、スケジュールについてご意見を伺いたいです。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "biz-03",
+      "target_language": "German",
+      "target_short": "de",
+      "domain": "business",
+      "source": "I'll send the updated proposal by end of week, but we need your input on the timeline.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Ich werde den aktualisierten Vorschlag bis Ende der Woche senden, aber wir benötigen Ihr Feedback zum Zeitplan.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Ich werde den aktualisierten Vorschlag bis Ende der Woche senden, aber wir benötigen Ihr Feedback zum Zeitplan.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Ich schicke den aktualisierten Vorschlag bis Ende der Woche, aber wir brauchen deine Meinung zum Zeitplan.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Ich schicke Ihnen den aktualisierten Vorschlag bis Ende der Woche, aber wir benötigen Ihre Rückmeldung zum Zeitplan.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "biz-04",
+      "target_language": "Simplified Chinese",
+      "target_short": "zh-CN",
+      "domain": "business",
+      "source": "Let's loop in Marcus on this. He has more context on the client's expectations.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "让我们把 Marcus 拉进来讨论这件事。他对客户的期望更了解。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "让我们把马库斯也拉进来。他对客户的期望有更多的了解。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "我们来加点标记。 他对客户的期望有更多背景介绍。",
+          "scores": {
+            "gpt_4o": 2,
+            "gemini_2_5_flash": 2,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 2.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "让我们把马库斯也拉进来讨论一下这件事。 他对客户的期望有更深入的了解。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "biz-04",
+      "target_language": "Japanese",
+      "target_short": "ja",
+      "domain": "business",
+      "source": "Let's loop in Marcus on this. He has more context on the client's expectations.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "この件にマーカスを加えておきましょう。彼はクライアントの期待について、より多くの背景を把握しています。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "これについてマーカスを巻き込みましょう。彼はクライアントの期待についてより多くのコンテキストを持っています。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 4,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.5
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "これにマーカーを組み込もう。 彼はクライアントの期待についてより詳しい背景を持っています。",
+          "scores": {
+            "gpt_4o": 2,
+            "gemini_2_5_flash": 2,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 2.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "この件についてはマーカスにも意見を聞いてみよう 彼は顧客の期待についてより詳しい情報を持っている",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 4,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.5
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "biz-04",
+      "target_language": "German",
+      "target_short": "de",
+      "domain": "business",
+      "source": "Let's loop in Marcus on this. He has more context on the client's expectations.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Beziehen wir Marcus ein. Er hat mehr Kontext zu den Erwartungen des Kunden.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Lass uns Marcus einbeziehen. Er hat mehr Kontext zu den Erwartungen des Kunden.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Lassen Sie uns dazu Marker einbinden. Er hat mehr Kontext zu den Erwartungen des Kunden.",
+          "scores": {
+            "gpt_4o": 2,
+            "gemini_2_5_flash": 2,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 2.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Lasst uns Marcus dazu einbeziehen. Er hat einen besseren Überblick über die Erwartungen des Kunden.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "biz-05",
+      "target_language": "Simplified Chinese",
+      "target_short": "zh-CN",
+      "domain": "business",
+      "source": "The board wants a status update before Friday. Can you put together a one-pager?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "董事会希望在周五之前收到进展报告。你能准备一页的简报吗？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "董事会要求在周五之前更新状态。 你能组装A1寻呼机吗？",
+          "scores": {
+            "gpt_4o": 2,
+            "gemini_2_5_flash": 2,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 2.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "董事会在周五之前会发布一次状态更新。 你能整理一份一页纸的资料吗？",
+          "scores": {
+            "gpt_4o": 2,
+            "gemini_2_5_flash": 2,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 2.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "biz-05",
+      "target_language": "Japanese",
+      "target_short": "ja",
+      "domain": "business",
+      "source": "The board wants a status update before Friday. Can you put together a one-pager?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "取締役会は金曜日までに進捗報告を求めています。1枚の資料にまとめていただけますか？",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "理事会は金曜日までに状況報告を求めています。 A1ページを作れる?",
+          "scores": {
+            "gpt_4o": 3,
+            "gemini_2_5_flash": 3,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 3.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "理事会は金曜日前に状況報告を行った。 1ページにまとめてもらえますか？",
+          "scores": {
+            "gpt_4o": 2,
+            "gemini_2_5_flash": 2,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 2.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "biz-05",
+      "target_language": "German",
+      "target_short": "de",
+      "domain": "business",
+      "source": "The board wants a status update before Friday. Can you put together a one-pager?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Der Vorstand möchte ein Status‑Update bis Freitag. Können Sie ein einseitiges Dokument zusammenstellen?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Der Vorstand möchte vor Freitag ein Statusupdate. Kannst du einen A1-Pager zusammenstellen?",
+          "scores": {
+            "gpt_4o": 4,
+            "gemini_2_5_flash": 2,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 3.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Der Vorstand hatte vor Freitag einen Statusbericht veröffentlicht. Können Sie ein einseitiges Dokument erstellen?",
+          "scores": {
+            "gpt_4o": 2,
+            "gemini_2_5_flash": 2,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 2.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "biz-06",
+      "target_language": "Simplified Chinese",
+      "target_short": "zh-CN",
+      "domain": "business",
+      "source": "We're hiring two more engineers for the platform team this quarter.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "我们本季度为平台团队再招聘两名工程师。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "我们在这个季度为平台团队招聘两名工程师。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "本季度我们为平台团队再招聘两名工程师。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "本季度我们将为平台团队再招聘两名工程师。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "biz-06",
+      "target_language": "Japanese",
+      "target_short": "ja",
+      "domain": "business",
+      "source": "We're hiring two more engineers for the platform team this quarter.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "今四半期、プラットフォームチームにエンジニアを2名増員します。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "今四半期にプラットフォームチームのためにエンジニアを2人採用します。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "今四半期、プラットフォームチームにエンジニアを2名追加で採用します。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "今四半期中にプラットフォームチームにエンジニアを2名追加採用します。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "biz-06",
+      "target_language": "German",
+      "target_short": "de",
+      "domain": "business",
+      "source": "We're hiring two more engineers for the platform team this quarter.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Wir stellen in diesem Quartal zwei weitere Ingenieure für das Plattformteam ein.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Wir stellen in diesem Quartal zwei weitere Ingenieure für das Plattformteam ein.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Wir stellen dieses Quartal zwei weitere Ingenieure für das Plattformteam ein.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Wir stellen in diesem Quartal zwei weitere Ingenieure für das Plattformteam ein.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "daily-01",
+      "target_language": "Simplified Chinese",
+      "target_short": "zh-CN",
+      "domain": "daily",
+      "source": "I'm not really hungry, but I'll grab something small if you're ordering.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "我其实不太饿，不过如果你点餐的话，我会吃点小的。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "我不是很饿，但如果你点餐的话，我会吃点小的。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "我其实不太饿，但如果你点的话我会买点小的。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 4,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.5
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "我不太饿，不过如果你点餐的话，我可以点点小份的。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "daily-01",
+      "target_language": "Japanese",
+      "target_short": "ja",
+      "domain": "daily",
+      "source": "I'm not really hungry, but I'll grab something small if you're ordering.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "あまりお腹は空いていないんだけど、もし注文するなら少しだけ何か取っておくね。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "あまりお腹は空いていないけれど、あなたが注文するなら何か小さいものを取るよ。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "あまりお腹は空いていませんが、注文なら小さなものを取ってきます。",
+          "scores": {
+            "gpt_4o": 3,
+            "gemini_2_5_flash": 4,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 3.5
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "あまりお腹は空いていないけど、何か軽く食べるなら注文するよ",
+          "scores": {
+            "gpt_4o": 4,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.5
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "daily-01",
+      "target_language": "German",
+      "target_short": "de",
+      "domain": "daily",
+      "source": "I'm not really hungry, but I'll grab something small if you're ordering.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Ich habe nicht wirklich Hunger, aber ich nehme etwas Kleines, wenn du bestellst.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Ich habe nicht wirklich Hunger, aber ich werde mir etwas Kleines holen, wenn du bestellst.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Ich habe eigentlich keinen Hunger, aber ich nehme etwas Kleines, falls du bestellst.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Ich habe nicht wirklich Hunger, aber ich nehme mir eine Kleinigkeit, wenn du bestellst.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "daily-02",
+      "target_language": "Simplified Chinese",
+      "target_short": "zh-CN",
+      "domain": "daily",
+      "source": "It's been one of those weeks. I just want to crash on the couch tonight.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "这周真是让人疲惫，我只想今晚倒在沙发上。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "这周真是太糟糕了，我今晚只想倒在沙发上。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "这周真是这样的一周。我今晚只想睡沙发。",
+          "scores": {
+            "gpt_4o": 4,
+            "gemini_2_5_flash": 3,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 3.5
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "这周真是太累了，今晚只想瘫在沙发上。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "daily-02",
+      "target_language": "Japanese",
+      "target_short": "ja",
+      "domain": "daily",
+      "source": "It's been one of those weeks. I just want to crash on the couch tonight.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "今週は本当に疲れ切って、今夜はソファで倒れ込みたい。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "今週はそんな感じだったので、今夜はただソファでくつろぎたいです。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 4,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.5
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "今週はそんな一週間でした。今夜はただソファで寝たいだけなんだ。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "今週は、今夜はソファでゴロゴロしたい気分の週だった。",
+          "scores": {
+            "gpt_4o": 4,
+            "gemini_2_5_flash": 4,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "daily-02",
+      "target_language": "German",
+      "target_short": "de",
+      "domain": "daily",
+      "source": "It's been one of those weeks. I just want to crash on the couch tonight.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Es war eine dieser Wochen, in der ich heute Abend einfach nur auf dem Sofa zusammenbrechen möchte.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Es war so eine Woche, ich möchte mich heute Abend einfach auf die Couch legen.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Es war eine dieser Wochen. Ich will heute Nacht einfach nur auf der Couch schlafen.",
+          "scores": {
+            "gpt_4o": 4,
+            "gemini_2_5_flash": 3,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 3.5
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Es war so eine Woche, da möchte ich heute Abend einfach nur auf der Couch zusammenbrechen.",
+          "scores": {
+            "gpt_4o": 4,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.5
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "daily-03",
+      "target_language": "Simplified Chinese",
+      "target_short": "zh-CN",
+      "domain": "daily",
+      "source": "She didn't say anything, but I could tell she was upset.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "她没有说话，但我能看出她很不高兴。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "她没有说什么，但我能看出她很不高兴。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "她没说话，但我能感觉到她很难过。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "她什么也没说，但我看得出来她很难过。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "daily-03",
+      "target_language": "Japanese",
+      "target_short": "ja",
+      "domain": "daily",
+      "source": "She didn't say anything, but I could tell she was upset.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "彼女は何も言わなかったが、怒っているのが分かった。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "彼女は何も言わなかったが、彼女が upset であることはわかった。",
+          "scores": {
+            "gpt_4o": 2,
+            "gemini_2_5_flash": 3,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 2.5
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "彼女は何も言わなかったが、動揺しているのがわかった。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "彼女は何も言わなかったが、動揺しているのは分かった。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "daily-03",
+      "target_language": "German",
+      "target_short": "de",
+      "domain": "daily",
+      "source": "She didn't say anything, but I could tell she was upset.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Sie sagte nichts, aber ich konnte merken, dass sie verärgert war.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Sie sagte nichts, aber ich konnte erkennen, dass sie verärgert war.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Sie sagte nichts, aber ich merkte, dass sie aufgebracht war.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Sie sagte nichts, aber ich merkte, dass sie verärgert war.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "daily-04",
+      "target_language": "Simplified Chinese",
+      "target_short": "zh-CN",
+      "domain": "daily",
+      "source": "It's a piece of cake, just follow the instructions on the box.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "这很容易，只要按照盒子上的说明操作。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "这很简单，只需按照盒子上的说明操作。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "这很简单，只要按照盒子上的说明*作。",
+          "scores": {
+            "gpt_4o": 4,
+            "gemini_2_5_flash": 3,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 3.5
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "这很简单，只要按照盒子上的说明操作就行了。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "daily-04",
+      "target_language": "Japanese",
+      "target_short": "ja",
+      "domain": "daily",
+      "source": "It's a piece of cake, just follow the instructions on the box.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "簡単です。箱に書かれた指示に従うだけです。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "それは簡単です、箱の指示に従ってください。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "簡単ですから、箱の説明通りにすればいいです。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "箱に書いてある説明書に従えば簡単だよ",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "daily-04",
+      "target_language": "German",
+      "target_short": "de",
+      "domain": "daily",
+      "source": "It's a piece of cake, just follow the instructions on the box.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Es ist ein Kinderspiel, folge einfach den Anweisungen auf der Schachtel.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Es ist ein Kinderspiel, folge einfach den Anweisungen auf der Verpackung.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Es ist ein Kinderspiel, befolge einfach die Anweisungen auf der Packung.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Das ist kinderleicht, folgen Sie einfach den Anweisungen auf der Packung.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "daily-05",
+      "target_language": "Simplified Chinese",
+      "target_short": "zh-CN",
+      "domain": "daily",
+      "source": "Don't get me wrong, I like the idea. I just think we need to think it through more.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "别误会，我喜欢这个想法。我只是觉得我们需要再仔细考虑一下。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "别误会，我喜欢这个想法，只是我觉得我们需要更深入地考虑一下。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "别误会，我喜欢这个想法，只是觉得我们还需要多想想。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "别误会，我喜欢这个想法，只是觉得我们需要再仔细考虑一下。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "daily-05",
+      "target_language": "Japanese",
+      "target_short": "ja",
+      "domain": "daily",
+      "source": "Don't get me wrong, I like the idea. I just think we need to think it through more.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "誤解しないでください、私はそのアイデアが好きです。ただ、もっとよく考える必要があると思います。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "誤解しないでほしいのですが、私はそのアイデアが好きです。ただ、もう少し考える必要があると思います。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "誤解しないでください、そのアイデアは好きですが、もっとよく考える必要があります。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "誤解しないでほしいのですが、そのアイデア自体は気に入っています。ただ、もっとじっくり考える必要があると思うのです。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "daily-05",
+      "target_language": "German",
+      "target_short": "de",
+      "domain": "daily",
+      "source": "Don't get me wrong, I like the idea. I just think we need to think it through more.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Versteh mich nicht falsch, ich mag die Idee. Ich denke nur, wir sollten sie noch genauer durchdenken.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Versteh mich nicht falsch, ich mag die Idee, ich denke nur, dass wir sie noch gründlicher durchdenken müssen.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Nicht falsch verstehen, ich mag die Idee, ich denke nur, wir sollten es noch gründlicher durchdenken.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Versteh mich nicht falsch, die Idee gefällt mir, ich denke nur, wir müssen sie noch einmal genauer durchdenken.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "daily-06",
+      "target_language": "Simplified Chinese",
+      "target_short": "zh-CN",
+      "domain": "daily",
+      "source": "Honestly, I've been feeling pretty burned out lately. I think I need a break.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "说实话，我最近感到相当疲惫。我觉得需要休息一下。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "老实说，我最近感到有些疲惫。我想我需要休息一下。 你",
+          "scores": {
+            "gpt_4o": 4,
+            "gemini_2_5_flash": 3,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 3.5
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "说实话，我最近感觉挺疲惫的。我觉得我需要休息一下。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "说实话，我最近感觉筋疲力尽。 我觉得我需要休息一下。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "daily-06",
+      "target_language": "Japanese",
+      "target_short": "ja",
+      "domain": "daily",
+      "source": "Honestly, I've been feeling pretty burned out lately. I think I need a break.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "正直に言うと、最近かなり燃え尽きた感じです。休みが必要だと思います。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "正直なところ、最近かなり疲れを感じています。休憩が必要だと思います。 あなた",
+          "scores": {
+            "gpt_4o": 2,
+            "gemini_2_5_flash": 3,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 2.5
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "正直なところ、最近かなり燃え尽きている気分です。休憩が必要だと思う。",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "正直、最近かなり燃え尽き症候群気味です。 休憩が必要だと思う",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "daily-06",
+      "target_language": "German",
+      "target_short": "de",
+      "domain": "daily",
+      "source": "Honestly, I've been feeling pretty burned out lately. I think I need a break.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Ehrlich gesagt fühle ich mich in letzter Zeit ziemlich ausgebrannt. Ich denke, ich brauche eine Pause.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Ehrlich gesagt fühle ich mich in letzter Zeit ziemlich ausgebrannt. Ich denke, ich brauche eine Pause. Du",
+          "scores": {
+            "gpt_4o": 4,
+            "gemini_2_5_flash": 3,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 3.5
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Ehrlich gesagt fühle ich mich in letzter Zeit ziemlich ausgebrannt. Ich glaube, ich brauche eine Pause.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Ehrlich gesagt fühle ich mich in letzter Zeit ziemlich ausgebrannt. Ich glaube, ich brauche eine Pause.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "rest-01",
+      "target_language": "Spanish",
+      "target_short": "es",
+      "domain": "restaurant",
+      "source": "Could I get the steak medium rare, with a side salad instead of fries?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "¿Podría pedir el bistec a punto medio con una ensalada en lugar de papas fritas?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 4,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.5
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "¿Podría pedir el filete término medio rojo con una ensalada de acompañamiento en lugar de papas fritas?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "¿Podría pedir el filete al punto medio con una ensalada en vez de patatas fritas?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 4,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.5
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "¿Podría pedir el bistec poco hecho con una ensalada en lugar de papas fritas?",
+          "scores": {
+            "gpt_4o": 3,
+            "gemini_2_5_flash": 4,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 3.5
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "rest-02",
+      "target_language": "Spanish",
+      "target_short": "es",
+      "domain": "restaurant",
+      "source": "We're celebrating an anniversary. Do you have any wine pairings you'd recommend?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Estamos celebrando un aniversario, ¿tienes alguna sugerencia de maridaje de vinos?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Estamos celebrando un aniversario. ¿Tienes alguna recomendación de maridajes de vino?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Estamos celebrando un aniversario. ¿Tienes algún maridaje de vino que recomendarías?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "lo celebramos en un aniversario ¿Tienes alguna recomendación de maridaje de vinos?",
+          "scores": {
+            "gpt_4o": 4,
+            "gemini_2_5_flash": 3,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 3.5
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "rest-03",
+      "target_language": "Spanish",
+      "target_short": "es",
+      "domain": "restaurant",
+      "source": "I'm allergic to shellfish. Can you check if there's anything in the sauce?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Soy alérgico a los mariscos. ¿Puedes comprobar si hay algo en la salsa?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Soy alérgico a los mariscos. ¿Puedes verificar si hay algo en la salsa?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Soy alérgico a los mariscos de mariscos. ¿Puedes comprobar si hay algo en la salsa?",
+          "scores": {
+            "gpt_4o": 2,
+            "gemini_2_5_flash": 3,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 2.5
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Soy alérgico a los mariscos, ¿puedes comprobar si hay algo en la salsa?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "rest-04",
+      "target_language": "Spanish",
+      "target_short": "es",
+      "domain": "restaurant",
+      "source": "Can we split the bill three ways? Two of us are paying with cards and one with cash.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "¿Podemos dividir la cuenta entre tres? Dos de nosotros pagaremos con tarjetas y uno con efectivo.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "¿Podemos dividir la cuenta en tres partes? Dos de nosotros pagamos con tarjeta y uno en efectivo. nosotros.",
+          "scores": {
+            "gpt_4o": 4,
+            "gemini_2_5_flash": 4,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "¿Podemos dividir la cuenta en tres? Dos de nosotros pagamos con tarjetas y uno en efectivo.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "¿Podemos dividir la cuenta entre tres? Dos de nosotros pagaremos con tarjeta y uno en efectivo.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "rest-05",
+      "target_language": "Spanish",
+      "target_short": "es",
+      "domain": "restaurant",
+      "source": "What's in the seasonal special? Is it spicy?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "¿Qué lleva el especial de temporada? ¿Es picante?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "¿Qué hay en la especial de temporada? ¿Es picante?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "¿Qué hay en el especial de temporada? ¿Es picante?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "¿Qué lleva el plato especial de temporada? ¿Es picante?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "rest-06",
+      "target_language": "Spanish",
+      "target_short": "es",
+      "domain": "restaurant",
+      "source": "Could we get the check whenever you have a moment?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "¿Podríamos pedir la cuenta cuando tenga un momento?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "¿Podríamos recibir la cuenta cuando tengas un momento?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "¿Podríamos cobrar la cuenta cuando tengas un momento?",
+          "scores": {
+            "gpt_4o": 3,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "¿Podríamos traerte el cheque cuando tengas un momento?",
+          "scores": {
+            "gpt_4o": 2,
+            "gemini_2_5_flash": 3,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 2.5
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "hotel-01",
+      "target_language": "Spanish",
+      "target_short": "es",
+      "domain": "hotel",
+      "source": "I'd like to extend my stay by two nights. Is that possible?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Me gustaría extender mi estancia 2 noches más. ¿Es posible?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Me gustaría extender mi estancia por dos noches. ¿Es eso posible?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Quisiera alargar mi estancia dos noches. ¿Es eso posible?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Me gustaría prolongar mi estancia dos noches. ¿Es eso posible?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "hotel-02",
+      "target_language": "Spanish",
+      "target_short": "es",
+      "domain": "hotel",
+      "source": "The room is too cold and the wifi isn't working. Could someone come up?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "La habitación está demasiado fría y el Wi‑Fi no funciona. ¿Podría alguien subir?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "La habitación está demasiado fría y el Wi-Fi no está funcionando. ¿Podría alguien subir? arriba.",
+          "scores": {
+            "gpt_4o": 4,
+            "gemini_2_5_flash": 4,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "La habitación está demasiado fría y el Wi-Fi no funciona. ¿Podría subir alguien?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "La habitación está demasiado fría y el wifi no funciona. ¿Podría venir alguien?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "hotel-03",
+      "target_language": "Spanish",
+      "target_short": "es",
+      "domain": "hotel",
+      "source": "Can we get an early check-in tomorrow? Our flight lands at nine in the morning.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "¿Podemos hacer el check‑in temprano mañana? Nuestro vuelo aterriza a las 9 de la mañana.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "¿Podemos hacer un check-in anticipado mañana? Nuestro vuelo llega a las 9 de la mañana.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "¿Podemos hacer un check-in temprano mañana? Nuestro vuelo aterriza a las 9:00 de la mañana.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "¿Podemos facturar antes mañana? Nuestro vuelo aterriza a las 9 de la mañana.",
+          "scores": {
+            "gpt_4o": 2,
+            "gemini_2_5_flash": 4,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 3.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "hotel-04",
+      "target_language": "Spanish",
+      "target_short": "es",
+      "domain": "hotel",
+      "source": "Where's the closest pharmacy that's open late? My daughter has a fever.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "¿Dónde está la farmacia más cercana que abre hasta tarde? Mi hija tiene fiebre.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "¿Dónde está la farmacia más cercana que esté abierta hasta tarde? Mi hija tiene fiebre.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "¿Dónde está la farmacia más cercana que abre hasta tarde? Mi hija tiene fiebre.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "¿Dónde está la farmacia más cercana que esté abierta hasta tarde? Mi hija tiene fiebre",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "hotel-05",
+      "target_language": "Spanish",
+      "target_short": "es",
+      "domain": "hotel",
+      "source": "Could you arrange a taxi to the airport for six in the morning tomorrow?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "¿Podrías organizar un taxi al aeropuerto para las 6 de la mañana mañana?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "¿Podrías arreglar un taxi al aeropuerto para las 6 de la mañana mañana?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "¿Podrías organizar un taxi al aeropuerto para las 6:00 de la mañana de mañana?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "¿Podrías reservar un taxi al aeropuerto para mañana a las seis de la mañana?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "hotel-06",
+      "target_language": "Spanish",
+      "target_short": "es",
+      "domain": "hotel",
+      "source": "Is breakfast included in the room rate, or is it an extra charge?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "¿El desayuno está incluido en la tarifa de la habitación o es un cargo extra?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "¿El desayuno está incluido en la tarifa de la habitación o es un cargo adicional?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "¿El desayuno está incluido en la tarifa de la habitación o es un coste adicional?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "¿El desayuno está incluido en el precio de la habitación o tiene un coste adicional?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "fam-01",
+      "target_language": "Spanish",
+      "target_short": "es",
+      "domain": "family",
+      "source": "I know you're tired, but we need to talk about what happened at dinner.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Sé que estás cansado, pero necesitamos hablar de lo que pasó en la cena.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Sé que estás cansado, pero necesitamos hablar sobre lo que pasó en la cena.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Sé que estás cansado, pero tenemos que hablar de lo que pasó en la cena.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Sé que estás cansado, pero necesitamos hablar de lo que pasó en la cena.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "fam-02",
+      "target_language": "Spanish",
+      "target_short": "es",
+      "domain": "family",
+      "source": "Mom called this morning. She wants us to visit next weekend if we can.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Mamá llamó esta mañana. Quiere que la visitemos el próximo fin de semana si podemos.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Mamá llamó esta mañana. Quiere que la visitemos el próximo fin de semana si podemos.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Mamá llamó esta mañana. Quiere que vayamos a visitarla el próximo fin de semana si podemos.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Mamá llamó esta mañana Quiere que la visitemos el próximo fin de semana si podemos.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "fam-03",
+      "target_language": "Spanish",
+      "target_short": "es",
+      "domain": "family",
+      "source": "I'm sorry I was harsh earlier. I was stressed about work and took it out on you.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Lo siento, fui duro antes. Estaba estresado por el trabajo y lo descargué en ti.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Lo siento, fui duro antes, estaba estresado por el trabajo y lo descargué contigo.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Siento haber sido duro antes. Estaba estresado por el trabajo y lo descargué contigo.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Siento haber sido tan dura antes, estaba estresada por el trabajo y me desquité contigo.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "fam-04",
+      "target_language": "Spanish",
+      "target_short": "es",
+      "domain": "family",
+      "source": "The kids really miss their grandparents. Maybe we should plan a visit soon.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Los niños extrañan mucho a sus abuelos. Tal vez deberíamos planear una visita pronto.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Los niños realmente extrañan a sus abuelos. Quizás deberíamos planear una visita pronto.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Los niños echan mucho de menos a sus abuelos. Quizá deberíamos planear una visita pronto.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Los niños extrañan mucho a sus abuelos. Quizás deberíamos planear una visita pronto.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "fam-05",
+      "target_language": "Spanish",
+      "target_short": "es",
+      "domain": "family",
+      "source": "I don't know how to tell my parents about this. They're going to be really upset.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "No sé cómo decirles esto a mis padres. Van a estar muy molestos.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "No sé cómo contarles a mis padres sobre esto. Se van a poner muy molestos.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "No sé cómo contarles esto a mis padres. Se van a enfadar mucho.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "No sé cómo contarles esto a mis padres, se van a enfadar mucho.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "fam-06",
+      "target_language": "Spanish",
+      "target_short": "es",
+      "domain": "family",
+      "source": "Can we talk about this after the kids go to bed? I don't want them to overhear.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "¿Podemos hablar de esto después de que los niños se acuesten? No quiero que los escuchen.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 3,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "¿Podemos hablar de esto después de que los niños se vayan a la cama? No quiero que escuchen.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "¿Podemos hablar de esto después de que los niños se vayan a la cama? No quiero que me oigan.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "¿Podemos hablar de esto después de que los niños se vayan a la cama? No quiero que lo oigan.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "biz-01",
+      "target_language": "Spanish",
+      "target_short": "es",
+      "domain": "business",
+      "source": "Can we push the kickoff meeting to Tuesday? Sarah's flying in late on Monday.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "¿Podemos posponer la reunión de inicio para el martes? Sarah llega en avión tarde el lunes.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "¿Podemos mover la reunión de inicio al martes? Sarah llega tarde el lunes. Lunes.",
+          "scores": {
+            "gpt_4o": 3,
+            "gemini_2_5_flash": 4,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 3.5
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "¿Podemos posponer la reunión de inicio hasta el martes? Sarah llega tarde el lunes.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 4,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.5
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "¿Podemos posponer la reunión inicial para el martes? Sarah llega en avión el lunes por la noche.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "biz-02",
+      "target_language": "Spanish",
+      "target_short": "es",
+      "domain": "business",
+      "source": "Our quarterly numbers came in below consensus, mostly due to supply chain delays.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Nuestros números trimestrales quedaron por debajo del consenso, mayormente debido a retrasos en la cadena de suministro.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Nuestros números trimestrales estuvieron por debajo del consenso, principalmente debido a retrasos en la cadena de suministro. maneras. tú",
+          "scores": {
+            "gpt_4o": 2,
+            "gemini_2_5_flash": 3,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 2.5
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Nuestros datos trimestrales quedaron por debajo del consenso, principalmente debido a retrasos en la cadena de suministro.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Nuestras cifras trimestrales estuvieron por debajo de las previsiones, principalmente debido a retrasos en la cadena de suministro.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "biz-03",
+      "target_language": "Spanish",
+      "target_short": "es",
+      "domain": "business",
+      "source": "I'll send the updated proposal by end of week, but we need your input on the timeline.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Enviaré la propuesta actualizada a finales de la semana, pero necesitamos tu opinión sobre el cronograma.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Enviaré la propuesta actualizada a finales de la semana, pero necesitamos tu opinión sobre el cronograma.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Enviaré la propuesta actualizada antes de que acabe la semana, pero necesitamos tu opinión sobre el calendario.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Enviaré la propuesta actualizada a finales de semana, pero necesitamos su opinión sobre el cronograma.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "biz-04",
+      "target_language": "Spanish",
+      "target_short": "es",
+      "domain": "business",
+      "source": "Let's loop in Marcus on this. He has more context on the client's expectations.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Incluyamos a Marcus en esto. Él tiene más contexto sobre las expectativas del cliente.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Involucremos a Marcus en esto. Él tiene más contexto sobre las expectativas del cliente.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Vamos a incluir marcadores en esto. Tiene más contexto sobre las expectativas de los clientes.",
+          "scores": {
+            "gpt_4o": 2,
+            "gemini_2_5_flash": 2,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 2.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Vamos a incluir a Marcus en esto. Él tiene más información sobre las expectativas del cliente.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "biz-05",
+      "target_language": "Spanish",
+      "target_short": "es",
+      "domain": "business",
+      "source": "The board wants a status update before Friday. Can you put together a one-pager?",
+      "translations": {
+        "LiveLingo": {
+          "translation": "La junta quiere una actualización de estado antes del viernes. ¿Puedes preparar un documento de una página?",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "La junta quiere una actualización del estado antes del viernes. ¿Puedes preparar un buscapersonas A1?",
+          "scores": {
+            "gpt_4o": 2,
+            "gemini_2_5_flash": 2,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 2.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "La junta directiva recibirá una actualización de estado antes del viernes. ¿Puedes elaborar un resumen de una página?",
+          "scores": {
+            "gpt_4o": 3,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "biz-06",
+      "target_language": "Spanish",
+      "target_short": "es",
+      "domain": "business",
+      "source": "We're hiring two more engineers for the platform team this quarter.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Estamos contratando a dos ingenieros más para el equipo de plataforma este trimestre.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Estamos contratando a dos ingenieros más para el equipo de plataforma este trimestre.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Este trimestre contratamos a dos ingenieros más para el equipo de plataforma.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Este trimestre contrataremos a dos ingenieros más para el equipo de plataforma.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "daily-01",
+      "target_language": "Spanish",
+      "target_short": "es",
+      "domain": "daily",
+      "source": "I'm not really hungry, but I'll grab something small if you're ordering.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "No tengo mucha hambre, pero tomaré algo pequeño si tú vas a pedir.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "No tengo mucha hambre, pero tomaré algo pequeño si estás pidiendo.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "No tengo mucha hambre, pero cogeré algo pequeño si vas a pedir.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "No tengo mucha hambre, pero tomaré algo pequeño si pides algo.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "daily-02",
+      "target_language": "Spanish",
+      "target_short": "es",
+      "domain": "daily",
+      "source": "It's been one of those weeks. I just want to crash on the couch tonight.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Ha sido una de esas semanas en las que solo quiero tirarme en el sofá esta noche.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Ha sido una de esas semanas, solo quiero desplomarme en el sofá esta noche.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Ha sido una de esas semanas. Solo quiero tumbarme en el sofá esta noche.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Ha sido una de esas semanas en las que solo quiero tirarme en el sofá esta noche.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "daily-03",
+      "target_language": "Spanish",
+      "target_short": "es",
+      "domain": "daily",
+      "source": "She didn't say anything, but I could tell she was upset.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "No dijo nada, pero pude notar que estaba molesta.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Ella no dijo nada, pero pude notar que estaba molesta.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "No dijo nada, pero se notaba que estaba molesta.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "No dijo nada, pero pude notar que estaba molesta.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "daily-04",
+      "target_language": "Spanish",
+      "target_short": "es",
+      "domain": "daily",
+      "source": "It's a piece of cake, just follow the instructions on the box.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Es pan comido, solo sigue las instrucciones del paquete.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Es pan comido, solo sigue las instrucciones en la caja.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Es pan comido, solo tienes que seguir las instrucciones de la caja.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Es pan comido, solo sigue las instrucciones de la caja.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "daily-05",
+      "target_language": "Spanish",
+      "target_short": "es",
+      "domain": "daily",
+      "source": "Don't get me wrong, I like the idea. I just think we need to think it through more.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "No me malinterpretes, me gusta la idea. Solo creo que debemos reflexionar más al respecto.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "No me malinterpretes, me gusta la idea, solo creo que necesitamos pensarlo más.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "No me malinterpretes, me gusta la idea, solo creo que tenemos que pensarlo mejor.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "No me malinterpretes, me gusta la idea, solo que creo que necesitamos analizarla más a fondo.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    },
+    {
+      "sentence_id": "daily-06",
+      "target_language": "Spanish",
+      "target_short": "es",
+      "domain": "daily",
+      "source": "Honestly, I've been feeling pretty burned out lately. I think I need a break.",
+      "translations": {
+        "LiveLingo": {
+          "translation": "Honestamente, me he sentido bastante agotado últimamente. Creo que necesito un descanso.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Whisper + GPT-4o-mini": {
+          "translation": "Honestamente, me he estado sintiendo bastante agotado últimamente. Creo que necesito un descanso. Tú",
+          "scores": {
+            "gpt_4o": 4,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 4.5
+          }
+        },
+        "Azure Speech Translation": {
+          "translation": "Sinceramente, últimamente me he estado sintiendo bastante quemado. Creo que necesito un descanso.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        },
+        "Google Cloud Translation v3": {
+          "translation": "Sinceramente, últimamente me he sentido bastante agotado. Creo que necesito un descanso.",
+          "scores": {
+            "gpt_4o": 5,
+            "gemini_2_5_flash": 5,
+            "claude_sonnet_4_6": null,
+            "composite_mean": 5.0
+          }
+        }
+      }
+    }
+  ]
+}

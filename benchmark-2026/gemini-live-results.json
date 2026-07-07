@@ -1,0 +1,1922 @@
+[
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "rest-01",
+  "domain": "restaurant",
+  "source": "Could I get the steak medium rare, with a side salad instead of fries?",
+  "target_lang": "es-ES",
+  "translation": "¿Podría pedir el bistec a término medio con una ensalada en lugar de papas?",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 4
+  },
+  "first_translated_audio_ms": 3031,
+  "source_audio": "rest-01.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "rest-01",
+  "domain": "restaurant",
+  "source": "Could I get the steak medium rare, with a side salad instead of fries?",
+  "target_lang": "zh-CN",
+  "translation": "我的牛排可以做成三分熟吗,配沙拉不要薯条?",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 4,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2905,
+  "source_audio": "rest-01.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "rest-01",
+  "domain": "restaurant",
+  "source": "Could I get the steak medium rare, with a side salad instead of fries?",
+  "target_lang": "ja-JP",
+  "translation": "ステーキはミディアムレアで、サイドサラダをフライドポテトの代わりにできますか？",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2918,
+  "source_audio": "rest-01.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "rest-01",
+  "domain": "restaurant",
+  "source": "Could I get the steak medium rare, with a side salad instead of fries?",
+  "target_lang": "de-DE",
+  "translation": "Könnte ich das Steak medium rare mit einem Beilagensalat statt Pommes bekommen?",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2967,
+  "source_audio": "rest-01.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "rest-02",
+  "domain": "restaurant",
+  "source": "We're celebrating an anniversary. Do you have any wine pairings you'd recommend?",
+  "target_lang": "es-ES",
+  "translation": "Estamos celebrando un aniversario. ¿Tiene alguna recomendación de vino?",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 4
+  },
+  "first_translated_audio_ms": 2999,
+  "source_audio": "rest-02.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "rest-02",
+  "domain": "restaurant",
+  "source": "We're celebrating an anniversary. Do you have any wine pairings you'd recommend?",
+  "target_lang": "zh-CN",
+  "translation": "我们正在庆祝一个周年纪念日。您有什么推荐的葡萄酒搭配吗？",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2931,
+  "source_audio": "rest-02.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "rest-02",
+  "domain": "restaurant",
+  "source": "We're celebrating an anniversary. Do you have any wine pairings you'd recommend?",
+  "target_lang": "ja-JP",
+  "translation": "記念日を祝っています。何かおすすめのワインのペアリングはありますか？",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 3066,
+  "source_audio": "rest-02.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "rest-02",
+  "domain": "restaurant",
+  "source": "We're celebrating an anniversary. Do you have any wine pairings you'd recommend?",
+  "target_lang": "de-DE",
+  "translation": "Wir feiern ein Jubiläum. Haben Sie Weinempfehlungen, die Sie empfehlen würden?",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 4,
+   "gemini": 4
+  },
+  "first_translated_audio_ms": 2976,
+  "source_audio": "rest-02.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "rest-03",
+  "domain": "restaurant",
+  "source": "I'm allergic to shellfish. Can you check if there's anything in the sauce?",
+  "target_lang": "es-ES",
+  "translation": "Soy alérgico a los mariscos. ¿Podrías revisar si hay algo en la salsa?",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2887,
+  "source_audio": "rest-03.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "rest-03",
+  "domain": "restaurant",
+  "source": "I'm allergic to shellfish. Can you check if there's anything in the sauce?",
+  "target_lang": "zh-CN",
+  "translation": "我对贝类过敏。你能帮我看看酱汁里有没有吗？",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2897,
+  "source_audio": "rest-03.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "rest-03",
+  "domain": "restaurant",
+  "source": "I'm allergic to shellfish. Can you check if there's anything in the sauce?",
+  "target_lang": "ja-JP",
+  "translation": "甲殻類アレルギーなんです。何かソースに入ってないか確認してもらえますか？",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2832,
+  "source_audio": "rest-03.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "rest-03",
+  "domain": "restaurant",
+  "source": "I'm allergic to shellfish. Can you check if there's anything in the sauce?",
+  "target_lang": "de-DE",
+  "translation": "Ich bin allergisch gegen Schalentiere. Können Sie nachsehen, ob etwas in der Soße ist?",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2867,
+  "source_audio": "rest-03.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "rest-04",
+  "domain": "restaurant",
+  "source": "Can we split the bill three ways? Two of us are paying with cards and one with cash.",
+  "target_lang": "es-ES",
+  "translation": "¿Podemos dividir la cuenta en tres partes? Dos de nosotros estamos pagando con tarjeta y uno en efectivo.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2916,
+  "source_audio": "rest-04.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "rest-04",
+  "domain": "restaurant",
+  "source": "Can we split the bill three ways? Two of us are paying with cards and one with cash.",
+  "target_lang": "zh-CN",
+  "translation": "我们可以把账单分成三份吗？我们两个人用卡付，一个用现金付。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2968,
+  "source_audio": "rest-04.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "rest-04",
+  "domain": "restaurant",
+  "source": "Can we split the bill three ways? Two of us are paying with cards and one with cash.",
+  "target_lang": "ja-JP",
+  "translation": "お会計を3人で割りにできますか？ 2人はカードで、1人は現金で払います。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2905,
+  "source_audio": "rest-04.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "rest-04",
+  "domain": "restaurant",
+  "source": "Can we split the bill three ways? Two of us are paying with cards and one with cash.",
+  "target_lang": "de-DE",
+  "translation": "Können wir die Rechnung durch drei teilen? Zwei von uns zahlen mit Karte und einer mit Bargeld.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 3112,
+  "source_audio": "rest-04.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "rest-05",
+  "domain": "restaurant",
+  "source": "What's in the seasonal special? Is it spicy?",
+  "target_lang": "es-ES",
+  "translation": "¿Qué trae el especial de temporada? ¿Es picante?",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2899,
+  "source_audio": "rest-05.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "rest-05",
+  "domain": "restaurant",
+  "source": "What's in the seasonal special? Is it spicy?",
+  "target_lang": "zh-CN",
+  "translation": "时令特供里有什么？是辣的吗？",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 3148,
+  "source_audio": "rest-05.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "rest-05",
+  "domain": "restaurant",
+  "source": "What's in the seasonal special? Is it spicy?",
+  "target_lang": "ja-JP",
+  "translation": "季節のスペシャルは何ですか？辛いですか？",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2931,
+  "source_audio": "rest-05.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "rest-05",
+  "domain": "restaurant",
+  "source": "What's in the seasonal special? Is it spicy?",
+  "target_lang": "de-DE",
+  "translation": "Was ist in dem saisonalen Special drin? Ist es scharf?",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2905,
+  "source_audio": "rest-05.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "rest-06",
+  "domain": "restaurant",
+  "source": "Could we get the check whenever you have a moment?",
+  "target_lang": "es-ES",
+  "translation": "¿Podríamos pedir la cuenta cuando tenga un momento?",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 3088,
+  "source_audio": "rest-06.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "rest-06",
+  "domain": "restaurant",
+  "source": "Could we get the check whenever you have a moment?",
+  "target_lang": "zh-CN",
+  "translation": "我们能在您有空的时候结账吗？",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 3001,
+  "source_audio": "rest-06.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "rest-06",
+  "domain": "restaurant",
+  "source": "Could we get the check whenever you have a moment?",
+  "target_lang": "ja-JP",
+  "translation": "お時間のある時に会計をお願いできますか？",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 3000,
+  "source_audio": "rest-06.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "rest-06",
+  "domain": "restaurant",
+  "source": "Could we get the check whenever you have a moment?",
+  "target_lang": "de-DE",
+  "translation": "Könnten wir die Rechnung bekommen, wenn Sie einen Moment Zeit haben?",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 3025,
+  "source_audio": "rest-06.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "hotel-01",
+  "domain": "hotel",
+  "source": "I'd like to extend my stay by two nights. Is that possible?",
+  "target_lang": "es-ES",
+  "translation": "Me gustaría extender mi estadía por dos noches. ¿Es posible?",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2947,
+  "source_audio": "hotel-01.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "hotel-01",
+  "domain": "hotel",
+  "source": "I'd like to extend my stay by two nights. Is that possible?",
+  "target_lang": "zh-CN",
+  "translation": "我想把我的住宿延长两晚。这可能吗？",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 3030,
+  "source_audio": "hotel-01.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "hotel-01",
+  "domain": "hotel",
+  "source": "I'd like to extend my stay by two nights. Is that possible?",
+  "target_lang": "ja-JP",
+  "translation": "滞在を2晩延長したいです。可能ですか？",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2964,
+  "source_audio": "hotel-01.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "hotel-01",
+  "domain": "hotel",
+  "source": "I'd like to extend my stay by two nights. Is that possible?",
+  "target_lang": "de-DE",
+  "translation": "Ich würde meinen Aufenthalt gerne um zwei Nächte verlängern. Ist das möglich?",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2907,
+  "source_audio": "hotel-01.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "hotel-02",
+  "domain": "hotel",
+  "source": "The room is too cold and the wifi isn't working. Could someone come up?",
+  "target_lang": "es-ES",
+  "translation": "La habitación está muy fría y el Wi-Fi no funciona. ¿Podría alguien subir?",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 3116,
+  "source_audio": "hotel-02.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "hotel-02",
+  "domain": "hotel",
+  "source": "The room is too cold and the wifi isn't working. Could someone come up?",
+  "target_lang": "zh-CN",
+  "translation": "房间太冷了， Wi-Fi 也没法用。能请人上来一下吗？",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2945,
+  "source_audio": "hotel-02.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "hotel-02",
+  "domain": "hotel",
+  "source": "The room is too cold and the wifi isn't working. Could someone come up?",
+  "target_lang": "ja-JP",
+  "translation": "部屋が寒すぎて、 Wi-Fiも使えないんです。誰か来てもらえますか？",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2826,
+  "source_audio": "hotel-02.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "hotel-02",
+  "domain": "hotel",
+  "source": "The room is too cold and the wifi isn't working. Could someone come up?",
+  "target_lang": "de-DE",
+  "translation": "Das Zimmer ist zu kalt und das WLAN funktioniert nicht. Könnte jemand hochkommen?",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2893,
+  "source_audio": "hotel-02.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "hotel-03",
+  "domain": "hotel",
+  "source": "Can we get an early check-in tomorrow? Our flight lands at nine in the morning.",
+  "target_lang": "es-ES",
+  "translation": "¿Podemos hacer el check-in temprano mañana? Nuestro vuelo llega a las 9 de la mañana.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2918,
+  "source_audio": "hotel-03.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "hotel-03",
+  "domain": "hotel",
+  "source": "Can we get an early check-in tomorrow? Our flight lands at nine in the morning.",
+  "target_lang": "zh-CN",
+  "translation": "我们明天可以提前入住吗？我们的航班早上9点到。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2954,
+  "source_audio": "hotel-03.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "hotel-03",
+  "domain": "hotel",
+  "source": "Can we get an early check-in tomorrow? Our flight lands at nine in the morning.",
+  "target_lang": "ja-JP",
+  "translation": "明日のアーリーチェックインはできますか？私たちの便は朝9時に到着します。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 3033,
+  "source_audio": "hotel-03.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "hotel-03",
+  "domain": "hotel",
+  "source": "Can we get an early check-in tomorrow? Our flight lands at nine in the morning.",
+  "target_lang": "de-DE",
+  "translation": "Können wir morgen früh einchecken? Unser Flug landet um 9 Uhr morgens.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 3082,
+  "source_audio": "hotel-03.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "hotel-04",
+  "domain": "hotel",
+  "source": "Where's the closest pharmacy that's open late? My daughter has a fever.",
+  "target_lang": "es-ES",
+  "translation": "¿Dónde está la farmacia más cercana que esté abierta hasta tarde? Mi hija tiene fiebre.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2859,
+  "source_audio": "hotel-04.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "hotel-04",
+  "domain": "hotel",
+  "source": "Where's the closest pharmacy that's open late? My daughter has a fever.",
+  "target_lang": "zh-CN",
+  "translation": "最近的药店在哪里开着门？我女儿发烧了。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 4,
+   "gemini": 4
+  },
+  "first_translated_audio_ms": 2947,
+  "source_audio": "hotel-04.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "hotel-04",
+  "domain": "hotel",
+  "source": "Where's the closest pharmacy that's open late? My daughter has a fever.",
+  "target_lang": "ja-JP",
+  "translation": "一番近くで開いている薬局はどこですか?娘が熱を出しているんです。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2976,
+  "source_audio": "hotel-04.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "hotel-04",
+  "domain": "hotel",
+  "source": "Where's the closest pharmacy that's open late? My daughter has a fever.",
+  "target_lang": "de-DE",
+  "translation": "Wo ist die nächste Apotheke, die lange offen hat? Meine Tochter hat Fieber.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 3150,
+  "source_audio": "hotel-04.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "hotel-05",
+  "domain": "hotel",
+  "source": "Could you arrange a taxi to the airport for six in the morning tomorrow?",
+  "target_lang": "es-ES",
+  "translation": "¿Podrías pedir un taxi al aeropuerto para las 6 de la mañana mañana?",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 4,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2992,
+  "source_audio": "hotel-05.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "hotel-05",
+  "domain": "hotel",
+  "source": "Could you arrange a taxi to the airport for six in the morning tomorrow?",
+  "target_lang": "zh-CN",
+  "translation": "你能帮我安排一辆去机场的出租车在明天早上6点吗？",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2888,
+  "source_audio": "hotel-05.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "hotel-05",
+  "domain": "hotel",
+  "source": "Could you arrange a taxi to the airport for six in the morning tomorrow?",
+  "target_lang": "ja-JP",
+  "translation": "空港までタクシーを朝6時に手配してもらえますか？",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 7245,
+  "source_audio": "hotel-05.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "hotel-05",
+  "domain": "hotel",
+  "source": "Could you arrange a taxi to the airport for six in the morning tomorrow?",
+  "target_lang": "de-DE",
+  "translation": "Könnten Sie ein Taxi zum Flughafen für 6 Uhr morgen bestellen?",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 4
+  },
+  "first_translated_audio_ms": 2914,
+  "source_audio": "hotel-05.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "hotel-06",
+  "domain": "hotel",
+  "source": "Is breakfast included in the room rate, or is it an extra charge?",
+  "target_lang": "es-ES",
+  "translation": "¿El desayuno está incluido en la tarifa de la habitación o es un cargo extra?",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2909,
+  "source_audio": "hotel-06.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "hotel-06",
+  "domain": "hotel",
+  "source": "Is breakfast included in the room rate, or is it an extra charge?",
+  "target_lang": "zh-CN",
+  "translation": "房费包含早餐吗？还是需要额外付费？",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2927,
+  "source_audio": "hotel-06.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "hotel-06",
+  "domain": "hotel",
+  "source": "Is breakfast included in the room rate, or is it an extra charge?",
+  "target_lang": "ja-JP",
+  "translation": "朝食は宿泊料金に含まれていますか？それとも別料金ですか？",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 3082,
+  "source_audio": "hotel-06.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "hotel-06",
+  "domain": "hotel",
+  "source": "Is breakfast included in the room rate, or is it an extra charge?",
+  "target_lang": "de-DE",
+  "translation": "Ist das Frühstück im Zimmerpreis inbegriffen oder kostet es extra?",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2982,
+  "source_audio": "hotel-06.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "fam-01",
+  "domain": "family",
+  "source": "I know you're tired, but we need to talk about what happened at dinner.",
+  "target_lang": "es-ES",
+  "translation": "Sé que estás cansado, pero tenemos que hablar de lo que pasó en la cena.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2927,
+  "source_audio": "fam-01.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "fam-01",
+  "domain": "family",
+  "source": "I know you're tired, but we need to talk about what happened at dinner.",
+  "target_lang": "zh-CN",
+  "translation": "我知道你累了，但我们需要谈谈晚餐时发生的事。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 3124,
+  "source_audio": "fam-01.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "fam-01",
+  "domain": "family",
+  "source": "I know you're tired, but we need to talk about what happened at dinner.",
+  "target_lang": "ja-JP",
+  "translation": "疲れているのはわかるけど、夕食の時のことを話さないと。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2842,
+  "source_audio": "fam-01.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "fam-01",
+  "domain": "family",
+  "source": "I know you're tired, but we need to talk about what happened at dinner.",
+  "target_lang": "de-DE",
+  "translation": "Ich weiß, du bist müde, aber wir müssen über das sprechen, was beim Abendessen passiert ist.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2946,
+  "source_audio": "fam-01.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "fam-02",
+  "domain": "family",
+  "source": "Mom called this morning. She wants us to visit next weekend if we can.",
+  "target_lang": "es-ES",
+  "translation": "Mi mamá llamó esta mañana. Quiere que la visitemos el próximo fin de semana si podemos.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2981,
+  "source_audio": "fam-02.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "fam-02",
+  "domain": "family",
+  "source": "Mom called this morning. She wants us to visit next weekend if we can.",
+  "target_lang": "zh-CN",
+  "translation": "妈妈今天早上打电话来。她想让我们下周末去看看她。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2920,
+  "source_audio": "fam-02.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "fam-02",
+  "domain": "family",
+  "source": "Mom called this morning. She wants us to visit next weekend if we can.",
+  "target_lang": "ja-JP",
+  "translation": "お母さんが今朝電話してきて、来週末に来てほしいって。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 3009,
+  "source_audio": "fam-02.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "fam-02",
+  "domain": "family",
+  "source": "Mom called this morning. She wants us to visit next weekend if we can.",
+  "target_lang": "de-DE",
+  "translation": "Mama hat heute Morgen angerufen. Sie möchte, dass wir nächstes Wochenende kommen, wenn wir können.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2871,
+  "source_audio": "fam-02.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "fam-03",
+  "domain": "family",
+  "source": "I'm sorry I was harsh earlier. I was stressed about work and took it out on you.",
+  "target_lang": "es-ES",
+  "translation": "Siento haber sido duro hace rato. Estaba estresado por el trabajo y me desquité contigo.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 3040,
+  "source_audio": "fam-03.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "fam-03",
+  "domain": "family",
+  "source": "I'm sorry I was harsh earlier. I was stressed about work and took it out on you.",
+  "target_lang": "zh-CN",
+  "translation": "我很抱歉刚才对你那么严厉。我当时工作压力大,把气撒在你身上了。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2887,
+  "source_audio": "fam-03.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "fam-03",
+  "domain": "family",
+  "source": "I'm sorry I was harsh earlier. I was stressed about work and took it out on you.",
+  "target_lang": "ja-JP",
+  "translation": "さっきは厳しくしてごめんね。仕事のことでストレスが溜まってて、八つ当たりしちゃった。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2881,
+  "source_audio": "fam-03.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "fam-03",
+  "domain": "family",
+  "source": "I'm sorry I was harsh earlier. I was stressed about work and took it out on you.",
+  "target_lang": "de-DE",
+  "translation": "Es tut mir leid, dass ich vorhin so streng war. Ich war gestresst wegen der Arbeit und habe es an dir ausgelassen.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2995,
+  "source_audio": "fam-03.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "fam-04",
+  "domain": "family",
+  "source": "The kids really miss their grandparents. Maybe we should plan a visit soon.",
+  "target_lang": "es-ES",
+  "translation": "Los niños extrañaban mucho a sus abuelos. Tal vez deberíamos planear una visita pronto.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 4,
+   "gemini": 4
+  },
+  "first_translated_audio_ms": 2927,
+  "source_audio": "fam-04.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "fam-04",
+  "domain": "family",
+  "source": "The kids really miss their grandparents. Maybe we should plan a visit soon.",
+  "target_lang": "zh-CN",
+  "translation": "孩子们真的很想念他们的祖父母。也许我们应该尽快计划去拜访。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2799,
+  "source_audio": "fam-04.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "fam-04",
+  "domain": "family",
+  "source": "The kids really miss their grandparents. Maybe we should plan a visit soon.",
+  "target_lang": "ja-JP",
+  "translation": "子供たちは本当に祖父母に会えなくて寂しがってた。近いうちに訪ねようかな。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2775,
+  "source_audio": "fam-04.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "fam-04",
+  "domain": "family",
+  "source": "The kids really miss their grandparents. Maybe we should plan a visit soon.",
+  "target_lang": "de-DE",
+  "translation": "Die Kinder haben ihre Großeltern wirklich vermisst. Vielleicht sollten wir bald einen Besuch planen.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 4,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2921,
+  "source_audio": "fam-04.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "fam-05",
+  "domain": "family",
+  "source": "I don't know how to tell my parents about this. They're going to be really upset.",
+  "target_lang": "es-ES",
+  "translation": "No sé cómo decirle a mis papás de esto. Se van a enojar mucho.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 3002,
+  "source_audio": "fam-05.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "fam-05",
+  "domain": "family",
+  "source": "I don't know how to tell my parents about this. They're going to be really upset.",
+  "target_lang": "zh-CN",
+  "translation": "我不知道该怎么跟父母说这件事。他们会非常难过的。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2966,
+  "source_audio": "fam-05.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "fam-05",
+  "domain": "family",
+  "source": "I don't know how to tell my parents about this. They're going to be really upset.",
+  "target_lang": "ja-JP",
+  "translation": "両親にどう言っていいかわからない。すごく怒るだろうな。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2935,
+  "source_audio": "fam-05.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "fam-05",
+  "domain": "family",
+  "source": "I don't know how to tell my parents about this. They're going to be really upset.",
+  "target_lang": "de-DE",
+  "translation": "Ich weiß nicht, wie ich es meinen Eltern sagen soll. Sie werden wirklich verärgert sein.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2999,
+  "source_audio": "fam-05.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "fam-06",
+  "domain": "family",
+  "source": "Can we talk about this after the kids go to bed? I don't want them to overhear.",
+  "target_lang": "es-ES",
+  "translation": "¿Podemos hablar de esto después de que los niños se duerman? No quiero que escuchen.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2938,
+  "source_audio": "fam-06.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "fam-06",
+  "domain": "family",
+  "source": "Can we talk about this after the kids go to bed? I don't want them to overhear.",
+  "target_lang": "zh-CN",
+  "translation": "我们能等孩子们睡觉后再谈这个吗？我不想让她们听到。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2972,
+  "source_audio": "fam-06.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "fam-06",
+  "domain": "family",
+  "source": "Can we talk about this after the kids go to bed? I don't want them to overhear.",
+  "target_lang": "ja-JP",
+  "translation": "子供たちが寝てから話せる？子供たちに聞かれたくないから。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2851,
+  "source_audio": "fam-06.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "fam-06",
+  "domain": "family",
+  "source": "Can we talk about this after the kids go to bed? I don't want them to overhear.",
+  "target_lang": "de-DE",
+  "translation": "Können wir darüber sprechen, nachdem die Kinder im Bett sind? Ich möchte nicht, dass sie es mitbekommen.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2949,
+  "source_audio": "fam-06.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "biz-01",
+  "domain": "business",
+  "source": "Can we push the kickoff meeting to Tuesday? Sarah's flying in late on Monday.",
+  "target_lang": "es-ES",
+  "translation": "¿Podemos posponer la reunión de inicio para el martes? Sarah llega tarde el lunes.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2850,
+  "source_audio": "biz-01.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "biz-01",
+  "domain": "business",
+  "source": "Can we push the kickoff meeting to Tuesday? Sarah's flying in late on Monday.",
+  "target_lang": "zh-CN",
+  "translation": "我们可以把启动会议推迟到周二吗？莎拉周一晚上才飞到。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2962,
+  "source_audio": "biz-01.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "biz-01",
+  "domain": "business",
+  "source": "Can we push the kickoff meeting to Tuesday? Sarah's flying in late on Monday.",
+  "target_lang": "ja-JP",
+  "translation": "キックオフミーティングを火曜日にずらせますか？サラが月曜の夜遅くに到着するんです。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 3147,
+  "source_audio": "biz-01.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "biz-01",
+  "domain": "business",
+  "source": "Can we push the kickoff meeting to Tuesday? Sarah's flying in late on Monday.",
+  "target_lang": "de-DE",
+  "translation": "Können wir das Kickoff-Meeting auf Dienstag verschieben? Sarahs Flug kommt erst spät am Montag an.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 3060,
+  "source_audio": "biz-01.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "biz-02",
+  "domain": "business",
+  "source": "Our quarterly numbers came in below consensus, mostly due to supply chain delays.",
+  "target_lang": "es-ES",
+  "translation": "Nuestros números trimestrales salieron por debajo del consenso, principalmente debido a retrasos en la cadena de suministro.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2967,
+  "source_audio": "biz-02.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "biz-02",
+  "domain": "business",
+  "source": "Our quarterly numbers came in below consensus, mostly due to supply chain delays.",
+  "target_lang": "zh-CN",
+  "translation": "我们的季度数据低于预期，主要是由于供应链延迟。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2870,
+  "source_audio": "biz-02.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "biz-02",
+  "domain": "business",
+  "source": "Our quarterly numbers came in below consensus, mostly due to supply chain delays.",
+  "target_lang": "ja-JP",
+  "translation": "当社の四半期決算は市場予想を下回りましたが、これは主にサプライチェーンの遅れによるものです。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2928,
+  "source_audio": "biz-02.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "biz-02",
+  "domain": "business",
+  "source": "Our quarterly numbers came in below consensus, mostly due to supply chain delays.",
+  "target_lang": "de-DE",
+  "translation": "Unsere Quartalszahlen lagen unter den Erwartungen, hauptsächlich aufgrund von Lieferkettenproblemen.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2877,
+  "source_audio": "biz-02.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "biz-03",
+  "domain": "business",
+  "source": "I'll send the updated proposal by end of week, but we need your input on the timeline.",
+  "target_lang": "es-ES",
+  "translation": "Enviaré la propuesta actualizada a finales de la semana, pero necesitamos tu opinión sobre el cronograma.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2875,
+  "source_audio": "biz-03.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "biz-03",
+  "domain": "business",
+  "source": "I'll send the updated proposal by end of week, but we need your input on the timeline.",
+  "target_lang": "zh-CN",
+  "translation": "我会在周末前把更新后的提案发过去,但我们需要您对时间表的意见。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 3118,
+  "source_audio": "biz-03.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "biz-03",
+  "domain": "business",
+  "source": "I'll send the updated proposal by end of week, but we need your input on the timeline.",
+  "target_lang": "ja-JP",
+  "translation": "更新した提案書は週末までに送りますが、タイムラインについて意見が必要です。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2908,
+  "source_audio": "biz-03.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "biz-03",
+  "domain": "business",
+  "source": "I'll send the updated proposal by end of week, but we need your input on the timeline.",
+  "target_lang": "de-DE",
+  "translation": "Ich schicke den aktualisierten Vorschlag bis Ende der Woche, aber wir brauchen deinen Input zum Zeitplan.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2984,
+  "source_audio": "biz-03.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "biz-04",
+  "domain": "business",
+  "source": "Let's loop in Marcus on this. He has more context on the client's expectations.",
+  "target_lang": "es-ES",
+  "translation": "Vamos a involucrar a Marcus en esto. Él tiene más contexto sobre las expectativas del cliente.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2940,
+  "source_audio": "biz-04.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "biz-04",
+  "domain": "business",
+  "source": "Let's loop in Marcus on this. He has more context on the client's expectations.",
+  "target_lang": "zh-CN",
+  "translation": "我们把马库斯也拉进来讨论一下。他对这个客户的期望有更多的了解。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2968,
+  "source_audio": "biz-04.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "biz-04",
+  "domain": "business",
+  "source": "Let's loop in Marcus on this. He has more context on the client's expectations.",
+  "target_lang": "ja-JP",
+  "translation": "これについてマーカスにも相談しよう。彼はその件についてクライアントの期待をよく知っている。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2994,
+  "source_audio": "biz-04.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "biz-04",
+  "domain": "business",
+  "source": "Let's loop in Marcus on this. He has more context on the client's expectations.",
+  "target_lang": "de-DE",
+  "translation": "Lass uns Marcus dazu holen. Er hat mehr Kontext zu den Erwartungen des Kunden.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 3002,
+  "source_audio": "biz-04.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "biz-05",
+  "domain": "business",
+  "source": "The board wants a status update before Friday. Can you put together a one-pager?",
+  "target_lang": "es-ES",
+  "translation": "La junta quiere una actualización de estado antes del viernes. ¿Puedes armar un resumen de una página?",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2965,
+  "source_audio": "biz-05.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "biz-05",
+  "domain": "business",
+  "source": "The board wants a status update before Friday. Can you put together a one-pager?",
+  "target_lang": "zh-CN",
+  "translation": "董事会想要在周五前更新状态。你能整理一份一页纸的报告吗？",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2950,
+  "source_audio": "biz-05.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "biz-05",
+  "domain": "business",
+  "source": "The board wants a status update before Friday. Can you put together a one-pager?",
+  "target_lang": "ja-JP",
+  "translation": "取締役会は、金曜日までに状況報告が欲しいそうです。1枚にまとめてもらえますか？",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2833,
+  "source_audio": "biz-05.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "biz-05",
+  "domain": "business",
+  "source": "The board wants a status update before Friday. Can you put together a one-pager?",
+  "target_lang": "de-DE",
+  "translation": "Der Vorstand möchte ein Status-Update vor Freitag. Kannst du eine einseitige Zusammenfassung erstellen?",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 3139,
+  "source_audio": "biz-05.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "biz-06",
+  "domain": "business",
+  "source": "We're hiring two more engineers for the platform team this quarter.",
+  "target_lang": "es-ES",
+  "translation": "Estamos contratando a dos ingenieros más para el equipo de plataforma este trimestre.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2920,
+  "source_audio": "biz-06.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "biz-06",
+  "domain": "business",
+  "source": "We're hiring two more engineers for the platform team this quarter.",
+  "target_lang": "zh-CN",
+  "translation": "我们正在为平台团队招聘另外两名工程师。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2918,
+  "source_audio": "biz-06.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "biz-06",
+  "domain": "business",
+  "source": "We're hiring two more engineers for the platform team this quarter.",
+  "target_lang": "ja-JP",
+  "translation": "あと2人のエンジニアをプラットフォームチームに今四半期で採用します。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2855,
+  "source_audio": "biz-06.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "biz-06",
+  "domain": "business",
+  "source": "We're hiring two more engineers for the platform team this quarter.",
+  "target_lang": "de-DE",
+  "translation": "Wir stellen zwei weitere Ingenieure für das Plattformteam in diesem Quartal ein.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2989,
+  "source_audio": "biz-06.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "daily-01",
+  "domain": "daily",
+  "source": "I'm not really hungry, but I'll grab something small if you're ordering.",
+  "target_lang": "es-ES",
+  "translation": "No tengo mucha hambre, pero comeré algo ligero si vas a pedir.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2881,
+  "source_audio": "daily-01.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "daily-01",
+  "domain": "daily",
+  "source": "I'm not really hungry, but I'll grab something small if you're ordering.",
+  "target_lang": "zh-CN",
+  "translation": "我其实不饿，但如果你要吃的话，我就随便吃点。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 3026,
+  "source_audio": "daily-01.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "daily-01",
+  "domain": "daily",
+  "source": "I'm not really hungry, but I'll grab something small if you're ordering.",
+  "target_lang": "ja-JP",
+  "translation": "お腹は空いてないけど、もし注文するなら何か食べるよ。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 3104,
+  "source_audio": "daily-01.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "daily-01",
+  "domain": "daily",
+  "source": "I'm not really hungry, but I'll grab something small if you're ordering.",
+  "target_lang": "de-DE",
+  "translation": "Ich bin nicht wirklich hungrig, aber ich nehme eine Kleinigkeit, wenn du bestellst.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2878,
+  "source_audio": "daily-01.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "daily-02",
+  "domain": "daily",
+  "source": "It's been one of those weeks. I just want to crash on the couch tonight.",
+  "target_lang": "es-ES",
+  "translation": "Ha sido una de esas semanas. Solo quiero tirarme en el sofá esta noche.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 3002,
+  "source_audio": "daily-02.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "daily-02",
+  "domain": "daily",
+  "source": "It's been one of those weeks. I just want to crash on the couch tonight.",
+  "target_lang": "zh-CN",
+  "translation": "这周真是太忙了。我只想在沙发上躺一晚。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 4,
+   "gemini": 4
+  },
+  "first_translated_audio_ms": 2861,
+  "source_audio": "daily-02.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "daily-02",
+  "domain": "daily",
+  "source": "It's been one of those weeks. I just want to crash on the couch tonight.",
+  "target_lang": "ja-JP",
+  "translation": "そういう週でした。ただソファーで寝たい気分です。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2993,
+  "source_audio": "daily-02.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "daily-02",
+  "domain": "daily",
+  "source": "It's been one of those weeks. I just want to crash on the couch tonight.",
+  "target_lang": "de-DE",
+  "translation": "Es war eine dieser Wochen. Ich will heute Abend nur auf dem Sofa entspannen.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 4
+  },
+  "first_translated_audio_ms": 2912,
+  "source_audio": "daily-02.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "daily-03",
+  "domain": "daily",
+  "source": "She didn't say anything, but I could tell she was upset.",
+  "target_lang": "es-ES",
+  "translation": "Ella no dijo nada, pero me di cuenta de que estaba molesta.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2880,
+  "source_audio": "daily-03.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "daily-03",
+  "domain": "daily",
+  "source": "She didn't say anything, but I could tell she was upset.",
+  "target_lang": "zh-CN",
+  "translation": "她什么也没说，但我看得出她很难过。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 3133,
+  "source_audio": "daily-03.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "daily-03",
+  "domain": "daily",
+  "source": "She didn't say anything, but I could tell she was upset.",
+  "target_lang": "ja-JP",
+  "translation": "彼女は何も言わなかったけど、怒っているのは分かった。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2902,
+  "source_audio": "daily-03.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "daily-03",
+  "domain": "daily",
+  "source": "She didn't say anything, but I could tell she was upset.",
+  "target_lang": "de-DE",
+  "translation": "Sie hat nichts gesagt, aber ich merkte, dass sie verärgert war.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2905,
+  "source_audio": "daily-03.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "daily-04",
+  "domain": "daily",
+  "source": "It's a piece of cake, just follow the instructions on the box.",
+  "target_lang": "es-ES",
+  "translation": "Es pan comido. Solo sigue las instrucciones en la caja.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 3140,
+  "source_audio": "daily-04.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "daily-04",
+  "domain": "daily",
+  "source": "It's a piece of cake, just follow the instructions on the box.",
+  "target_lang": "zh-CN",
+  "translation": "这太简单了。只要按照说明书上的做就行了。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2953,
+  "source_audio": "daily-04.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "daily-04",
+  "domain": "daily",
+  "source": "It's a piece of cake, just follow the instructions on the box.",
+  "target_lang": "ja-JP",
+  "translation": "簡単ですよ。説明書通りにやってください。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2978,
+  "source_audio": "daily-04.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "daily-04",
+  "domain": "daily",
+  "source": "It's a piece of cake, just follow the instructions on the box.",
+  "target_lang": "de-DE",
+  "translation": "Es ist kinderleicht. Befolge einfach die Anweisungen auf der Packung.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2903,
+  "source_audio": "daily-04.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "daily-05",
+  "domain": "daily",
+  "source": "Don't get me wrong, I like the idea. I just think we need to think it through more.",
+  "target_lang": "es-ES",
+  "translation": "No me malinterpretes, me gusta la idea. Solo creo que tenemos que pensarlo más.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 4
+  },
+  "first_translated_audio_ms": 2918,
+  "source_audio": "daily-05.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "daily-05",
+  "domain": "daily",
+  "source": "Don't get me wrong, I like the idea. I just think we need to think it through more.",
+  "target_lang": "zh-CN",
+  "translation": "别误会，我喜欢这个主意。我只是觉得我们需要再多考虑一下。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 3022,
+  "source_audio": "daily-05.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "daily-05",
+  "domain": "daily",
+  "source": "Don't get me wrong, I like the idea. I just think we need to think it through more.",
+  "target_lang": "ja-JP",
+  "translation": "誤解しないでほしいんだけど、そのアイデアはいいと思う。ただ、もっとよく考える必要があると思う。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2975,
+  "source_audio": "daily-05.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "daily-05",
+  "domain": "daily",
+  "source": "Don't get me wrong, I like the idea. I just think we need to think it through more.",
+  "target_lang": "de-DE",
+  "translation": "Versteh mich nicht falsch, ich mag die Idee. Ich glaube nur, wir müssen das noch mehr durchdenken.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2977,
+  "source_audio": "daily-05.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "daily-06",
+  "domain": "daily",
+  "source": "Honestly, I've been feeling pretty burned out lately. I think I need a break.",
+  "target_lang": "es-ES",
+  "translation": "La verdad, me he sentido bastante agotado últimamente. Creo que necesito un descanso.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2811,
+  "source_audio": "daily-06.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "daily-06",
+  "domain": "daily",
+  "source": "Honestly, I've been feeling pretty burned out lately. I think I need a break.",
+  "target_lang": "zh-CN",
+  "translation": "说实话，我最近感觉很累。我觉得我需要休息一下。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2859,
+  "source_audio": "daily-06.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "daily-06",
+  "domain": "daily",
+  "source": "Honestly, I've been feeling pretty burned out lately. I think I need a break.",
+  "target_lang": "ja-JP",
+  "translation": "正直、最近かなり燃え尽きちゃってるんだ。ちょっと休まないと。",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2835,
+  "source_audio": "daily-06.wav (audio.zip)"
+ },
+ {
+  "system": "gemini-3.5-live-translate-preview",
+  "evaluated": "2026-06-09",
+  "sentence_id": "daily-06",
+  "domain": "daily",
+  "source": "Honestly, I've been feeling pretty burned out lately. I think I need a break.",
+  "target_lang": "de-DE",
+  "translation": "Ehrlich gesagt, ich fühle mich in letzter Zeit ziemlich ausgebrannt. Ich glaube, ich brauche eine Pause.",
+  "translation_origin": "model-provided transcript of its translated speech output",
+  "judge_scores": {
+   "gpt": 5,
+   "gemini": 5
+  },
+  "first_translated_audio_ms": 2871,
+  "source_audio": "daily-06.wav (audio.zip)"
+ }
+]

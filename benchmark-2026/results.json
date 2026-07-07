@@ -1,0 +1,81 @@
+{
+  "benchmark": "LiveLingo Real-Time Voice Translation Benchmark 2026",
+  "version": "1.0",
+  "published": "2026-06-04",
+  "metrics": {
+    "TTF": {
+      "name": "Final Transcript Latency",
+      "unit": "ms",
+      "definition": "Wall-clock time from speaker end-of-speech (energy-VAD, 500ms silence) to first is_final translation emit.",
+      "per_system": {
+        "livelingo": {
+          "n_utterances": 27,
+          "ttf_median_ms": 1518,
+          "ttf_ci_lo_ms": 1096,
+          "ttf_ci_hi_ms": 1852,
+          "ttf_min_ms": 13,
+          "ttf_max_ms": 3818
+        },
+        "google_cloud": {
+          "n_utterances": 30,
+          "ttf_median_ms": 26736,
+          "ttf_ci_lo_ms": 20296,
+          "ttf_ci_hi_ms": 51586,
+          "ttf_min_ms": 796,
+          "ttf_max_ms": 74326
+        },
+        "azure": {
+          "n_utterances": 30,
+          "ttf_median_ms": 4755,
+          "ttf_ci_lo_ms": 3620,
+          "ttf_ci_hi_ms": 9507,
+          "ttf_min_ms": 282,
+          "ttf_max_ms": 27162
+        },
+        "whisper_gpt": {
+          "n_utterances": 28,
+          "ttf_median_ms": 2720,
+          "ttf_ci_lo_ms": 1880,
+          "ttf_ci_hi_ms": 3396,
+          "ttf_min_ms": 249,
+          "ttf_max_ms": 8795
+        }
+      }
+    }
+  },
+  "clips": [
+    {
+      "id": "voa-zh-001-biden-xi-summit",
+      "src": "zh",
+      "tgt": "en",
+      "youtube_id": "cWEhvlRQBkE",
+      "start_s": 90,
+      "end_s": 210,
+      "duration_s": 120,
+      "license": "public-domain (VOA, US fed gov work)"
+    },
+    {
+      "id": "voa-es-002-venezuela-migration",
+      "src": "es",
+      "tgt": "en",
+      "youtube_id": "6Wn5sjiAAoU",
+      "start_s": 0,
+      "end_s": 120,
+      "duration_s": 120,
+      "license": "public-domain"
+    },
+    {
+      "id": "voa-pt-001-costa-junior-angola",
+      "src": "pt",
+      "tgt": "en",
+      "youtube_id": "4P3wYdmKWQI",
+      "start_s": 30,
+      "end_s": 150,
+      "duration_s": 120,
+      "license": "public-domain"
+    }
+  ],
+  "methodology_url": "https://www.livelingo.io/research/benchmark-2026#methodology",
+  "page_url": "https://www.livelingo.io/research/benchmark-2026",
+  "license": "CC-BY-4.0"
+}

@@ -1,0 +1,367 @@
+{
+  "benchmark": "LiveLingo Voice Translation Corridor Benchmark 2026",
+  "version": "1.0",
+  "evaluation_date": "2026-07-06",
+  "license": "CC-BY-4.0",
+  "url": "https://www.livelingo.io/research/voice-corridor-benchmark-2026",
+  "summary": "Real-time voice translation accuracy across 16 migrant-worker language corridors. LiveLingo ranked #1 on all 16 pairs.",
+  "methodology": {
+    "task": "speech-to-text translation comprehension fidelity (audio in, translation out)",
+    "audio": "native worker-scenario utterances synthesized to speech, 16 kHz mono, then fed as audio to every system's own speech-translation pipeline",
+    "domains": [
+      "workplace",
+      "healthcare",
+      "housing",
+      "bureaucracy",
+      "money",
+      "daily"
+    ],
+    "systems_compared": [
+      "LiveLingo",
+      "Azure Speech Translation",
+      "Whisper + GPT-4o-mini",
+      "Google (STT v2 + Translate v3)"
+    ],
+    "judges": [
+      "GPT-4o (gpt-4o-2024-11-20)",
+      "Gemini 2.5 Flash",
+      "Claude Haiku 4.5"
+    ],
+    "scoring": "0-5 comprehension fidelity, mean of independent LLM judges per utterance; parse-failures excluded (not scored 0)",
+    "reproducibility": "corpus, per-utterance scores, and harness available; each system consumes identical audio"
+  },
+  "overall_mean_composite": {
+    "LiveLingo": 4.33,
+    "Azure Speech Translation": 3.466,
+    "Whisper + GPT-4o-mini": 3.196,
+    "Google (STT v2 + Translate v3)": 3.947
+  },
+  "overall_ranking": [
+    "LiveLingo",
+    "Google (STT v2 + Translate v3)",
+    "Azure Speech Translation",
+    "Whisper + GPT-4o-mini"
+  ],
+  "pairs": [
+    {
+      "pair": "tr-de",
+      "source": "Turkish",
+      "target": "German",
+      "n_utterances": 59,
+      "scores": {
+        "LiveLingo": 4.266,
+        "Azure Speech Translation": 3.802,
+        "Whisper + GPT-4o-mini": 3.633,
+        "Google (STT v2 + Translate v3)": 3.966
+      },
+      "rank": [
+        "LiveLingo",
+        "Google (STT v2 + Translate v3)",
+        "Azure Speech Translation",
+        "Whisper + GPT-4o-mini"
+      ],
+      "livelingo_rank": 1,
+      "margin_over_2nd": 0.3
+    },
+    {
+      "pair": "ar-de",
+      "source": "Arabic",
+      "target": "German",
+      "n_utterances": 60,
+      "scores": {
+        "LiveLingo": 4.244,
+        "Azure Speech Translation": 2.928,
+        "Whisper + GPT-4o-mini": 2.35,
+        "Google (STT v2 + Translate v3)": 3.889
+      },
+      "rank": [
+        "LiveLingo",
+        "Google (STT v2 + Translate v3)",
+        "Azure Speech Translation",
+        "Whisper + GPT-4o-mini"
+      ],
+      "livelingo_rank": 1,
+      "margin_over_2nd": 0.355
+    },
+    {
+      "pair": "ar-fr",
+      "source": "Arabic",
+      "target": "French",
+      "n_utterances": 60,
+      "scores": {
+        "LiveLingo": 4.278,
+        "Azure Speech Translation": 3.067,
+        "Whisper + GPT-4o-mini": 2.456,
+        "Google (STT v2 + Translate v3)": 3.933
+      },
+      "rank": [
+        "LiveLingo",
+        "Google (STT v2 + Translate v3)",
+        "Azure Speech Translation",
+        "Whisper + GPT-4o-mini"
+      ],
+      "livelingo_rank": 1,
+      "margin_over_2nd": 0.345
+    },
+    {
+      "pair": "ar-es",
+      "source": "Arabic",
+      "target": "Spanish",
+      "n_utterances": 20,
+      "scores": {
+        "LiveLingo": 3.533,
+        "Azure Speech Translation": 3.033,
+        "Whisper + GPT-4o-mini": 2.15,
+        "Google (STT v2 + Translate v3)": 3.383
+      },
+      "rank": [
+        "LiveLingo",
+        "Google (STT v2 + Translate v3)",
+        "Azure Speech Translation",
+        "Whisper + GPT-4o-mini"
+      ],
+      "livelingo_rank": 1,
+      "margin_over_2nd": 0.15
+    },
+    {
+      "pair": "id-ja",
+      "source": "Indonesian",
+      "target": "Japanese",
+      "n_utterances": 30,
+      "scores": {
+        "LiveLingo": 4.456,
+        "Azure Speech Translation": 3.144,
+        "Whisper + GPT-4o-mini": 3.922,
+        "Google (STT v2 + Translate v3)": 3.956
+      },
+      "rank": [
+        "LiveLingo",
+        "Google (STT v2 + Translate v3)",
+        "Whisper + GPT-4o-mini",
+        "Azure Speech Translation"
+      ],
+      "livelingo_rank": 1,
+      "margin_over_2nd": 0.5
+    },
+    {
+      "pair": "id-ko",
+      "source": "Indonesian",
+      "target": "Korean",
+      "n_utterances": 30,
+      "scores": {
+        "LiveLingo": 4.233,
+        "Azure Speech Translation": 3.144,
+        "Whisper + GPT-4o-mini": 3.4,
+        "Google (STT v2 + Translate v3)": 3.933
+      },
+      "rank": [
+        "LiveLingo",
+        "Google (STT v2 + Translate v3)",
+        "Whisper + GPT-4o-mini",
+        "Azure Speech Translation"
+      ],
+      "livelingo_rank": 1,
+      "margin_over_2nd": 0.3
+    },
+    {
+      "pair": "id-zh",
+      "source": "Indonesian",
+      "target": "Chinese",
+      "n_utterances": 30,
+      "scores": {
+        "LiveLingo": 4.489,
+        "Azure Speech Translation": 3.111,
+        "Whisper + GPT-4o-mini": 3.578,
+        "Google (STT v2 + Translate v3)": 4.044
+      },
+      "rank": [
+        "LiveLingo",
+        "Google (STT v2 + Translate v3)",
+        "Whisper + GPT-4o-mini",
+        "Azure Speech Translation"
+      ],
+      "livelingo_rank": 1,
+      "margin_over_2nd": 0.445
+    },
+    {
+      "pair": "vi-ko",
+      "source": "Vietnamese",
+      "target": "Korean",
+      "n_utterances": 30,
+      "scores": {
+        "LiveLingo": 4.444,
+        "Azure Speech Translation": 3.956,
+        "Whisper + GPT-4o-mini": 2.722,
+        "Google (STT v2 + Translate v3)": 4.189
+      },
+      "rank": [
+        "LiveLingo",
+        "Google (STT v2 + Translate v3)",
+        "Azure Speech Translation",
+        "Whisper + GPT-4o-mini"
+      ],
+      "livelingo_rank": 1,
+      "margin_over_2nd": 0.255
+    },
+    {
+      "pair": "vi-ja",
+      "source": "Vietnamese",
+      "target": "Japanese",
+      "n_utterances": 30,
+      "scores": {
+        "LiveLingo": 4.478,
+        "Azure Speech Translation": 3.733,
+        "Whisper + GPT-4o-mini": 2.567,
+        "Google (STT v2 + Translate v3)": 4.278
+      },
+      "rank": [
+        "LiveLingo",
+        "Google (STT v2 + Translate v3)",
+        "Azure Speech Translation",
+        "Whisper + GPT-4o-mini"
+      ],
+      "livelingo_rank": 1,
+      "margin_over_2nd": 0.2
+    },
+    {
+      "pair": "pt-de",
+      "source": "Portuguese",
+      "target": "German",
+      "n_utterances": 30,
+      "scores": {
+        "LiveLingo": 4.611,
+        "Azure Speech Translation": 4.122,
+        "Whisper + GPT-4o-mini": 3.589,
+        "Google (STT v2 + Translate v3)": 4.5
+      },
+      "rank": [
+        "LiveLingo",
+        "Google (STT v2 + Translate v3)",
+        "Azure Speech Translation",
+        "Whisper + GPT-4o-mini"
+      ],
+      "livelingo_rank": 1,
+      "margin_over_2nd": 0.111
+    },
+    {
+      "pair": "pt-fr",
+      "source": "Portuguese",
+      "target": "French",
+      "n_utterances": 30,
+      "scores": {
+        "LiveLingo": 4.344,
+        "Azure Speech Translation": 4.067,
+        "Whisper + GPT-4o-mini": 3.944,
+        "Google (STT v2 + Translate v3)": 4.311
+      },
+      "rank": [
+        "LiveLingo",
+        "Google (STT v2 + Translate v3)",
+        "Azure Speech Translation",
+        "Whisper + GPT-4o-mini"
+      ],
+      "livelingo_rank": 1,
+      "margin_over_2nd": 0.033
+    },
+    {
+      "pair": "pl-de",
+      "source": "Polish",
+      "target": "German",
+      "n_utterances": 20,
+      "scores": {
+        "LiveLingo": 3.833,
+        "Azure Speech Translation": 3.367,
+        "Whisper + GPT-4o-mini": 3.3,
+        "Google (STT v2 + Translate v3)": 3.517
+      },
+      "rank": [
+        "LiveLingo",
+        "Google (STT v2 + Translate v3)",
+        "Azure Speech Translation",
+        "Whisper + GPT-4o-mini"
+      ],
+      "livelingo_rank": 1,
+      "margin_over_2nd": 0.316
+    },
+    {
+      "pair": "zh-vi",
+      "source": "Chinese",
+      "target": "Vietnamese",
+      "n_utterances": 20,
+      "scores": {
+        "LiveLingo": 4.667,
+        "Azure Speech Translation": 3.75,
+        "Whisper + GPT-4o-mini": 4.283,
+        "Google (STT v2 + Translate v3)": 3.833
+      },
+      "rank": [
+        "LiveLingo",
+        "Whisper + GPT-4o-mini",
+        "Google (STT v2 + Translate v3)",
+        "Azure Speech Translation"
+      ],
+      "livelingo_rank": 1,
+      "margin_over_2nd": 0.384
+    },
+    {
+      "pair": "zh-id",
+      "source": "Chinese",
+      "target": "Indonesian",
+      "n_utterances": 20,
+      "scores": {
+        "LiveLingo": 4.45,
+        "Azure Speech Translation": 3.767,
+        "Whisper + GPT-4o-mini": 3.967,
+        "Google (STT v2 + Translate v3)": 3.45
+      },
+      "rank": [
+        "LiveLingo",
+        "Whisper + GPT-4o-mini",
+        "Azure Speech Translation",
+        "Google (STT v2 + Translate v3)"
+      ],
+      "livelingo_rank": 1,
+      "margin_over_2nd": 0.483
+    },
+    {
+      "pair": "zh-ms",
+      "source": "Chinese",
+      "target": "Malay",
+      "n_utterances": 20,
+      "scores": {
+        "LiveLingo": 4.55,
+        "Azure Speech Translation": 3.983,
+        "Whisper + GPT-4o-mini": 4.0,
+        "Google (STT v2 + Translate v3)": 3.85
+      },
+      "rank": [
+        "LiveLingo",
+        "Whisper + GPT-4o-mini",
+        "Azure Speech Translation",
+        "Google (STT v2 + Translate v3)"
+      ],
+      "livelingo_rank": 1,
+      "margin_over_2nd": 0.55
+    },
+    {
+      "pair": "ms-zh",
+      "source": "Malay",
+      "target": "Chinese",
+      "n_utterances": 20,
+      "scores": {
+        "LiveLingo": 4.433,
+        "Azure Speech Translation": 3.183,
+        "Whisper + GPT-4o-mini": 2.933,
+        "Google (STT v2 + Translate v3)": 3.433
+      },
+      "rank": [
+        "LiveLingo",
+        "Google (STT v2 + Translate v3)",
+        "Azure Speech Translation",
+        "Whisper + GPT-4o-mini"
+      ],
+      "livelingo_rank": 1,
+      "margin_over_2nd": 1.0
+    }
+  ]
+}

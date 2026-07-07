@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this data, please cite it as below."
+type: dataset
+title: "LiveLingo Voice Translation Benchmarks 2026"
+authors:
+  - name: "LiveLingo Research"
+    website: "https://www.livelingo.io/research"
+year: 2026
+url: "https://www.livelingo.io/research/voice-corridor-benchmark-2026"
+repository: "https://github.com/livelingo/voice-translation-benchmark"
+license: CC-BY-4.0
+version: "1.0"
+date-released: "2026-07-07"
+keywords:
+  - speech translation
+  - real-time translation
+  - voice translation benchmark
+  - comprehension fidelity
+  - LLM-as-judge
+abstract: >-
+  Benchmark data for real-time voice translation quality. Includes a
+  16-language-corridor comprehension benchmark (Turkish, Arabic, Indonesian,
+  Vietnamese, Portuguese, Polish, Chinese, Malay source languages) and a
+  latency + comprehension-fidelity benchmark (n=120, en to es/zh-CN/ja/de),
+  comparing LiveLingo, Google, Azure, and Whisper + GPT-4o-mini on identical
+  source audio, scored by three independent LLM judges.

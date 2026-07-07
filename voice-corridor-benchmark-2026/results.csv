@@ -1,0 +1,17 @@
+pair,source,target,n_utterances,livelingo,google,azure,whisper_gpt,livelingo_rank,margin_over_2nd
+tr-de,Turkish,German,59,4.266,3.966,3.802,3.633,1,0.3
+ar-de,Arabic,German,60,4.244,3.889,2.928,2.35,1,0.355
+ar-fr,Arabic,French,60,4.278,3.933,3.067,2.456,1,0.345
+ar-es,Arabic,Spanish,20,3.533,3.383,3.033,2.15,1,0.15
+id-ja,Indonesian,Japanese,30,4.456,3.956,3.144,3.922,1,0.5
+id-ko,Indonesian,Korean,30,4.233,3.933,3.144,3.4,1,0.3
+id-zh,Indonesian,Chinese,30,4.489,4.044,3.111,3.578,1,0.445
+vi-ko,Vietnamese,Korean,30,4.444,4.189,3.956,2.722,1,0.255
+vi-ja,Vietnamese,Japanese,30,4.478,4.278,3.733,2.567,1,0.2
+pt-de,Portuguese,German,30,4.611,4.5,4.122,3.589,1,0.111
+pt-fr,Portuguese,French,30,4.344,4.311,4.067,3.944,1,0.033
+pl-de,Polish,German,20,3.833,3.517,3.367,3.3,1,0.316
+zh-vi,Chinese,Vietnamese,20,4.667,3.833,3.75,4.283,1,0.384
+zh-id,Chinese,Indonesian,20,4.45,3.45,3.767,3.967,1,0.483
+zh-ms,Chinese,Malay,20,4.55,3.85,3.983,4.0,1,0.55
+ms-zh,Malay,Chinese,20,4.433,3.433,3.183,2.933,1,1.0
