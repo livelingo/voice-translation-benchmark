@@ -44,7 +44,7 @@ Data: [`results.json`](voice-corridor-benchmark-2026/results.json) · [`results.
 
 Two sections. **Section 1 (latency/stability):** median Final Transcript Latency 1.5 s for LiveLingo with zero Normalized Erasure, vs 2.7 s (Google Cloud), 4.8 s (Azure), 27 s (Whisper + GPT-4o-mini) on conversational broadcast audio. **Section 2 (comprehension fidelity, n=120):** LiveLingo composite **4.96 / 5** vs Google 4.77, Azure 4.65, Whisper + GPT-4o-mini 4.63 across en→es / en→zh-CN / en→ja / en→de, scored by three independent frontier LLM judges. Speech-to-speech addenda cover Gemini Live and the OpenAI Realtime API.
 
-Data: [`results.json`](benchmark-2026/results.json) · [`results.csv`](benchmark-2026/results.csv) · [`comprehension-results.json`](benchmark-2026/comprehension-results.json) · [`comprehension-results.csv`](benchmark-2026/comprehension-results.csv) · [`audio.zip`](benchmark-2026/audio.zip) (30 source WAVs, public-domain VOA) · [`gemini-live-results.json`](benchmark-2026/gemini-live-results.json) · [`openai-realtime-results.json`](benchmark-2026/openai-realtime-results.json)
+Data: [`results.json`](benchmark-2026/results.json) · [`results.csv`](benchmark-2026/results.csv) · [`comprehension-results.json`](benchmark-2026/comprehension-results.json) · [`comprehension-results.csv`](benchmark-2026/comprehension-results.csv) · [`audio.zip`](benchmark-2026/audio.zip) (30 authored English source utterances, 16 kHz mono WAV) · [`gemini-live-results.json`](benchmark-2026/gemini-live-results.json) · [`openai-realtime-results.json`](benchmark-2026/openai-realtime-results.json)
 
 ## Method (summary)
 
